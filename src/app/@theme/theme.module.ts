@@ -67,8 +67,9 @@ import {
   TwoColumnsLayoutComponent,
 } from './layouts';
 import { DEFAULT_THEME } from './styles/theme.default';
-import { COSMIC_THEME } from './styles/theme.cosmic';
-import { CORPORATE_THEME } from './styles/theme.corporate';
+// import { COSMIC_THEME } from './styles/theme.cosmic';
+// import { CORPORATE_THEME } from './styles/theme.corporate';
+import { ADJUNO_THEME } from './styles/theme.adjuno';
 
 const BASE_MODULES = [CommonModule, FormsModule, ReactiveFormsModule];
 
@@ -141,9 +142,9 @@ const PIPES = [
 const NB_THEME_PROVIDERS = [
   ...NbThemeModule.forRoot(
     {
-      name: 'cosmic',
+      name: 'adjuno',
     },
-    [ DEFAULT_THEME, COSMIC_THEME, CORPORATE_THEME ],
+    [ DEFAULT_THEME, ADJUNO_THEME],
   ).providers,
   ...NbSidebarModule.forRoot().providers,
   ...NbMenuModule.forRoot().providers,

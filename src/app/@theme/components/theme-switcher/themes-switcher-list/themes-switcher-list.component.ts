@@ -25,17 +25,21 @@ export class ThemeSwitcherListComponent {
 
   themes = [
     {
+      title: 'Adjuno',
+      key: 'adjuno',
+    },
+    {
       title: 'Light',
       key: 'default',
     },
-    {
-      title: 'Cosmic',
-      key: 'cosmic',
-    },
-    {
-      title: 'Corporate',
-      key: 'corporate',
-    },
+    // {
+    //   title: 'Cosmic',
+    //   key: 'cosmic',
+    // },
+    // {
+    //   title: 'Corporate',
+    //   key: 'corporate',
+    // },
   ];
 
   constructor(
