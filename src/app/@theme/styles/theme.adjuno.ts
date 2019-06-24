@@ -7,8 +7,18 @@ const adjColor10 = '#ef7104';
 
 export const ADJUNO_THEME = {
   name: 'adjuno',
-  base: null,
+  base: 'default',
   variables: {
+    warningLight: '#93827F',
+    infoLight: '#F3F9D2',
+    dangerLight: '#F18A31',
+    successLight: '#183B53',
+    primaryLight: '#ACD573',
+    warning: '#93827F',
+    info: '#F3F9D2',
+    danger: '#F18A31',
+    success: '#183B53',
+    primary: '#8dc63f',
 
     // Safari fix
     temperature: [
