@@ -1,14 +1,14 @@
-const adjColor01 = '#ffffff';
-const adjColor02 = '#000000';
+// const adjColor01 = '#ffffff';
+// const adjColor02 = '#000000';
 const adjColor03 = '#8dc63f';
 const adjColor04 = '#012842';
 const adjColor05 = '#80b636';
-const adjColor06 = '#76848e';
-const adjColor07 = '#4c6676';
+// const adjColor06 = '#76848e';
+// const adjColor07 = '#4c6676';
 const adjColor08 = '#00416d';
 const adjColor09 = '#dee4e8';
 const adjColor10 = '#ef7104';
-const adjColor11 = '#e80000';
+// const adjColor11 = '#e80000';
 
 export const ADJUNO_THEME = {
   name: 'adjuno',
