@@ -19,7 +19,7 @@
     </defs>
     <g [attr.transform]="styles.arcTranslateStr">
 
-      <g class="toClip" [attr.clip-path]="'url(#sliderClip' + svgControlId +')'">
+      <g class="toClip" fill="#dee4e8" [attr.clip-path]="'url(#sliderClip' + svgControlId +')'">
         <g class="toFilter" [attr.filter]="'url(#blurFilter' + svgControlId +')'">
           <path [attr.d]="arc.d" [attr.fill]="arc.color" *ngFor="let arc of styles.gradArcs"></path>
         </g>

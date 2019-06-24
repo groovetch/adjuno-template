@@ -128,8 +128,10 @@ $nb-themes: nb-register-theme((
   sidebar-header-height: initial,
   layout-content-width: 1400px,
 
-  font-main: Roboto,
-  font-secondary: Exo,
+  font-main: unquote('Nunito, Roboto, "Helvetica Neue", Arial, sans-serif'),
+  font-secondary: font-main,
+
+  alert-suc-bg: '#fd0000',
 
   switcher-background: #fd0000,
   switcher-background-percentage: 50%,
@@ -143,7 +145,7 @@ $nb-themes: nb-register-theme((
   slide-out-shadow-color-rtl: 0 4px 14px 0 #a2d2c8,
 
   chart-panel-summary-box-shadow: none,
-  chart-panel-summary-background-color: #ecf2f5,
+  chart-panel-summary-background-color: #fbfbfb,
   chart-panel-summary-border-color: #ebeff1,
   chart-panel-summary-border-width: 1px,
 

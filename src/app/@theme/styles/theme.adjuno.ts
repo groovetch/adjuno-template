@@ -34,15 +34,15 @@ export const ADJUNO_THEME = {
     traffic: {
       colorBlack: '#000000',
       tooltipBg: '#ffffff',
-      tooltipBorderColor: '#c0c8d1',
+      tooltipBorderColor: adjColor03,
       tooltipExtraCss: 'border-radius: 10px; padding: 4px 16px;',
       tooltipTextColor: '#2a2a2a',
       tooltipFontWeight: 'bolder',
 
       lineBg: '#c0c8d1',
       lineShadowBlur: '1',
-      itemColor: '#bcc3cc',
-      itemBorderColor: '#bcc3cc',
+      itemColor: adjColor03,
+      itemBorderColor: adjColor03,
       itemEmphasisBorderColor: adjColor03,
       shadowLineDarkBg: 'rgba(0, 0, 0, 0)',
       shadowLineShadow: 'rgba(0, 0, 0, 0)',
@@ -216,15 +216,15 @@ export const ADJUNO_THEME = {
       secondLineShadow: 'rgba(14, 16, 48, 0.4)',
 
       // third bar
-      thirdLineGradFrom: adjColor07,
-      thirdLineGradTo: adjColor07,
+      thirdLineGradFrom: adjColor10,
+      thirdLineGradTo: adjColor10,
       thirdLineShadow: 'rgba(14, 16, 48, 0.4)',
     },
 
     orderProfitLegend: {
       firstItem: adjColor03,
       secondItem: adjColor04,
-      thirdItem: adjColor07,
+      thirdItem: adjColor10,
     },
 
     visitors: {
