@@ -17,7 +17,7 @@ export const MENU_ITEMS: NbMenuItem[] = [
     group: true,
   },
   {
-    title: 'Extra Components',
+    title: 'Components',
     icon: 'nb-star',
     children: [
       {
