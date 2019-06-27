@@ -30,6 +30,10 @@ export class HeroButtonComponent implements OnDestroy {
         gradientLeft: `adjust-hue(${colors.primary}, 20deg)`,
         gradientRight: colors.primary,
       },
+      adjuno: {
+        gradientLeft: `adjust-hue(${colors.primary}, 10deg)`,
+        gradientRight: colors.primary,
+      },
       corporate: {
         color: colors.primary,
         glow: {
@@ -53,6 +57,10 @@ export class HeroButtonComponent implements OnDestroy {
       title: 'Warning Button',
       buttonTitle: 'Warning',
       default: {
+        gradientLeft: `adjust-hue(${colors.warning}, 10deg)`,
+        gradientRight: colors.warning,
+      },
+      adjuno: {
         gradientLeft: `adjust-hue(${colors.warning}, 10deg)`,
         gradientRight: colors.warning,
       },
@@ -82,6 +90,10 @@ export class HeroButtonComponent implements OnDestroy {
         gradientLeft: `adjust-hue(${colors.success}, 20deg)`,
         gradientRight: colors.success,
       },
+      adjuno: {
+        gradientLeft: `adjust-hue(${colors.success}, 10deg)`,
+        gradientRight: colors.success,
+      },
       corporate: {
         color: colors.success,
         glow: {
@@ -105,6 +117,10 @@ export class HeroButtonComponent implements OnDestroy {
       title: 'Info Button',
       buttonTitle: 'Info',
       default: {
+        gradientLeft: `adjust-hue(${colors.info}, -10deg)`,
+        gradientRight: colors.info,
+      },
+      adjuno: {
         gradientLeft: `adjust-hue(${colors.info}, -10deg)`,
         gradientRight: colors.info,
       },
@@ -134,6 +150,10 @@ export class HeroButtonComponent implements OnDestroy {
         gradientLeft: `adjust-hue(${colors.danger}, -20deg)`,
         gradientRight: colors.danger,
       },
+      adjuno: {
+        gradientLeft: `adjust-hue(${colors.danger}, -10deg)`,
+        gradientRight: colors.danger,
+      },
       corporate: {
         color: colors.danger,
         glow: {
@@ -157,6 +177,9 @@ export class HeroButtonComponent implements OnDestroy {
       title: 'Ghost Button',
       buttonTitle: 'Ghost',
       default: {
+        border: '#dadfe6',
+      },
+      adjuno: {
         border: '#dadfe6',
       },
       corporate: {
