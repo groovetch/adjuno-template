@@ -13,7 +13,7 @@ const MAIN_COMPONENTS = [
   imports: [
     MainRoutingModule,
     ThemeModule,
-    MiscellaneousModule
+    MiscellaneousModule,
   ],
   declarations: [
     ...MAIN_COMPONENTS,
