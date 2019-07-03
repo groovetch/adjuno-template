@@ -1,10 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'ngx-miscellaneous',
-  template: `
-    <router-outlet></router-outlet>
-  `,
+  selector: 'app-miscellaneous',
+  templateUrl: './miscellaneous.component.html',
 })
 export class MiscellaneousComponent {
 }
