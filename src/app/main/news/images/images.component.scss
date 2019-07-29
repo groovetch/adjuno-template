@@ -1,0 +1,46 @@
+.image-1 {
+  width: 360px;
+  height: 260px;
+  object-fit: cover;
+}
+
+.image-2 {
+  width: 360px;
+  height: 128px;
+  object-fit: cover;
+}
+
+.image-3-top {
+  width: 360px;
+  height: 128px;
+  object-fit: cover;
+}
+
+.image-3-bottom {
+  width: 178px;
+  height: 128px;
+  object-fit: cover;
+}
+
+.image-content {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  display: grid;
+}
+
+.top {
+  margin-bottom: 2px;
+}
+
+.bottom {
+  margin-top: 2px;
+}
+
+.right-side {
+  margin-right: 4px;
+}
+
+.image-group {
+  display: flex;
+}

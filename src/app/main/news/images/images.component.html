@@ -1,0 +1,27 @@
+<div>
+  <div *ngIf="images && images.length == 1" class="image-content">
+    <img class="image-1" [src]="images[0]"/>
+  </div>
+  <div *ngIf="images && images.length == 2" class="image-content">
+    <img class="image-2 top" [src]="images[0]" />
+    <img class="image-2 bottom" [src]="images[1]" />
+  </div>
+  <div *ngIf="images && images.length == 3" class="image-content">
+    <img class="image-3-top top" [src]="images[0]" />
+    <div>
+        <img class="image-3-bottom bottom right-side" [src]="images[1]" />
+        <img class="image-3-bottom bottom" [src]="images[2]"/>
+    </div>
+  </div>
+  <div *ngIf="images && images.length == 4" class="image-content">
+    <div class="image-group">
+        <img class="image-3-bottom top right-side" [src]="images[0]" />
+        <img class="image-3-bottom top" [src]="images[1]"/>
+    </div>
+      <div class="image-group">
+          <img class="image-3-bottom bottom right-side" [src]="images[2]" />
+          <img class="image-3-bottom bottom" [src]="images[3]"/>
+      </div>
+     
+  </div>
+</div>

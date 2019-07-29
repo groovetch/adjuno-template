@@ -19,6 +19,10 @@ const routes: Routes = [
         pathMatch: 'full'
       },
       {
+        path: 'news',
+        loadChildren: './news/news.module#NewsModule'
+      },
+      {
         path: '**',
         component: NotFoundComponent
       }

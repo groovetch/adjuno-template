@@ -1,0 +1,26 @@
+<div class="news">
+    <div class="container">
+        <div class="wrapper">
+            <div class="news-header">
+                <h1 class="header-title">Latest News</h1>
+                <div class="header-button">
+                  <a class="button-add-new" (click) = "onNewStoryBtnClick()">
+                      <div class="plus-button">
+
+                      </div>
+                      <div class="btn-content">
+                        add new story
+                      </div>
+                  </a>
+                </div>
+              </div>
+        </div>
+
+
+        <!--Show list of new-card-->
+        <div class="wrapper">
+          <ngx-news-card *ngFor="let card of data; let i = index" [(news)] ="card" [cardId] = "i"></ngx-news-card>
+        </div>
+      </div>
+</div>
+
