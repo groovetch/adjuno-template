@@ -1,18 +1,18 @@
 nb-card {
   height: 270px;
   width: 270px;
-  border: 1px solid #E8E8ED;
+  border: 1px solid #e8e8ed;
   display: block;
   text-align: center;
 }
 
 .item {
-  background-color: #8DC63F;
-  color: #FFFFFF;
+  background-color: #8dc63f;
+  color: #ffffff;
 }
 
 .add-item {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: #666666;
 }
 
@@ -23,7 +23,7 @@ nb-card {
 }
 
 .title {
-  font-family: "Nunito Sans";
+  font-family: 'Nunito Sans';
   font-size: 18px;
   font-weight: bold;
   line-height: 30px;
@@ -39,7 +39,7 @@ nb-card {
   margin-left: 20px;
 }
 
-#add-icon {
+.add-icon {
   width: 120px;
   height: 120px;
   margin-top: 50px;
