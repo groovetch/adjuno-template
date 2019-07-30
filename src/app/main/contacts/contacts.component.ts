@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CONTACTS } from './contacts-model/contacts-mock';
 
 @Component({
   selector: 'ngx-contacts',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contacts.component.scss']
 })
 export class ContactsComponent implements OnInit {
+  contacts = CONTACTS;
 
   constructor() { }
 

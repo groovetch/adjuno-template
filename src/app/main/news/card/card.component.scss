@@ -1,0 +1,102 @@
+/* tslint:disable */
+.card {
+  display: flex;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.eclipse-dot {
+  color: #555555;
+  margin-top: 20px;
+  margin-right: 10px;
+  text-align: right;
+}
+
+.eclipse-dot::after {
+  content: '\2807';
+  font-size: 20px;
+}
+
+.card-content {
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 23px;
+  margin-right: 50px;
+}
+
+.text-container {
+  position: relative;
+  display: block;
+  color: #838485;
+  width: 100%;
+  height: calc(66px + 5px);
+  overflow: hidden;
+  white-space: normal;
+}
+
+.text-content {
+  word-break: word-break;
+  position: relative;
+  display: block;
+  max-height: 3em;
+}
+
+.ellipsis {
+  position: absolute;
+  right: 0;
+  top: calc(90px + 2px - 100%);
+  text-align: left;
+  background: white;
+}
+
+.card-detail {
+  margin-top: 50px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #666666;
+  font-style: italic;
+  margin-bottom: 55px;
+}
+
+.card-detail-content {
+  font-weight: bold;
+  font-style: normal;
+}
+
+.down-arrow {
+  transform: rotate(90deg);
+  width: 10px;
+  height: 10px;
+  display: block;
+}
+
+.btn-show-more {
+  height: 48px;
+  width: 170px;
+  border: 1px solid #8ac53f;
+  color: #8ac53f !important;
+  background-color: #ffffff;
+  position: relative;
+  text-align: center;
+  line-height: 45px;
+  cursor: pointer;
+  font-style: normal;
+  float: right;
+  margin-right: 50px;
+  top: -13px;
+}
+
+.card-section {
+  margin-left: 60px;
+  width: 100%;
+}
+.image-section {
+  float: left;
+}
+.news-card {
+  display: flex;
+}

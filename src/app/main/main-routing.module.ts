@@ -14,13 +14,21 @@ const routes: Routes = [
         loadChildren: './miscellaneous/miscellaneous.module#MiscellaneousModule'
       },
       {
-        path: 'contacts',
-        loadChildren: './contacts/contacts.module#ContactsModule'
+        path: 'dashboard',
+        loadChildren: './dashboard/dashboard.module#DashboardModule'
       },
       {
         path: '',
         redirectTo: 'dashboard',
         pathMatch: 'full'
+      },
+      {
+        path: 'news',
+        loadChildren: './news/news.module#NewsModule'
+      },
+      {
+        path: 'contacts',
+        loadChildren: './contacts/contacts.module#ContactsModule'
       },
       {
         path: '**',

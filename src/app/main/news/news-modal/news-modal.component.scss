@@ -1,0 +1,26 @@
+.news-modal {
+  font-family: 'Nunito Sans';
+
+  .news-modal-header {
+    text-align: center;
+    margin-bottom: 35px;
+  }
+
+  .news-modal-title {
+    color: #242a32;
+    font-family: 'Nunito Sans';
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 30px;
+    margin-top: 40px;
+  }
+
+  .news-modal-body {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  .ck-editor__editable_inline {
+    min-height: 200px;
+  }
+}

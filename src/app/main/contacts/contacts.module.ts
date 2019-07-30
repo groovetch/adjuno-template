@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ContactsComponent } from './contacts.component';
 import { ContactsRoutingModule } from './contacts-routing.module';
+import { NbCardModule } from '@nebular/theme';
 
 @NgModule({
   declarations: [
@@ -11,7 +12,8 @@ import { ContactsRoutingModule } from './contacts-routing.module';
   imports: [
     CommonModule,
     NgbModule,
-    ContactsRoutingModule
+    ContactsRoutingModule,
+    NbCardModule
   ]
 })
 export class ContactsModule { }

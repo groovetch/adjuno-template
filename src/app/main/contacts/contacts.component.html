@@ -1,12 +1,12 @@
 <div class="contact-content container">
   <div class="row">
-      <div class="col-1"></div>
-      <div class="col-10">
+      <div class="col-1 col-sm-1"></div>
+      <div class="col-10 col-sm-10">
           <!-- Content header and button -->
           <div class="d-flex justify-content-between">
-            <h2>
+            <h1 class="header-title">
               Contacts
-            </h2>
+            </h1>
             <a class="add-contact-button">
                 <span class="fa-stack">
                   <i class="far fa-circle fa-stack-2x"></i>
@@ -21,56 +21,38 @@
           <div class="d-flex justify-content-center">
             <div class="contact-list">
                 <div class="row">
-                    <div class="col-6">
-                        <div class="test">
+                    <div *ngFor="let contact of (contacts)" class="col-12 col-md-12 col-lg-6">
+                          <div class="contact-card-list">
+                              <nb-card>
+                                <div class="row">
+                                  <div class="col-3 col-md-2 col-lg-3"></div>
+                                  <div class="col-6 col-md-9 col-lg-7">
+                                      <div class="card-section">
+                                          <!-- <div class="card-title"> -->
+                                              <h3>{{contact.FirstName}} {{contact.SurName}}</h3>
+                                              <p>{{contact.Company}}/ {{contact.Department}}</p>
+                                          <!-- </div> -->
+                                            <p>{{contact.PhoneNumber}}</p>
+                                            <p>{{contact.Email}}</p>
+                                            <p>{{contact.Country}}</p>
+                                      </div>
+                                  </div>
+                                  <div class="col-3 col-md-1 col-lg-2">
+                                      <div class="eclipse-dot"></div>
+                                  </div>
+                                </div>
+                                
+                                
+                              </nb-card>
                           
-                            A nebula is an interstellar cloud of dust, hydrogen, helium and other ionized gases.
-                            Originally, nebula was a name for any diffuse astronomical object,
-                            including galaxies beyond the Milky Way.
-                          
-                        </div>
-                    </div>
-                    <div class="col-6 test">
-                        <div>
-                            
-                          A nebula is an interstellar cloud of dust, hydrogen, helium and other ionized gases.
-                          Originally, nebula was a name for any diffuse astronomical object,
-                          including galaxies beyond the Milky Way.
+                          </div>
                         
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div>
-                            
-                          A nebula is an interstellar cloud of dust, hydrogen, helium and other ionized gases.
-                          Originally, nebula was a name for any diffuse astronomical object,
-                          including galaxies beyond the Milky Way.
-                        
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div>
-                            
-                          A nebula is an interstellar cloud of dust, hydrogen, helium and other ionized gases.
-                          Originally, nebula was a name for any diffuse astronomical object,
-                          including galaxies beyond the Milky Way.
-                        
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div>
-                            
-                          A nebula is an interstellar cloud of dust, hydrogen, helium and other ionized gases.
-                          Originally, nebula was a name for any diffuse astronomical object,
-                          including galaxies beyond the Milky Way.
-                        
-                        </div>
                     </div>
                 </div>
             </div>
               
           </div>
       </div>
-      <div class="col-1"></div>
+      <div class="col-1 col-sm-1"></div>
     </div>
 </div>

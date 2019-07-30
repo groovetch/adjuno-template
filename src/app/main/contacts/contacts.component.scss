@@ -43,15 +43,42 @@
     }
 
     .contact-list {
-        margin-top: 25px;
+        margin-top: 5px;
+
+        .contact-card-list {
+
+            .card-section {
+                margin-top: 39px;
+
+                .card-title {
+                    font-size: 20px;
+                    font-weight: bold;
+                    color: #333333;
+                }
+            }
+
+            .eclipse-dot {
+                color: #555555;
+                margin-top: 15px;
+                margin-right: 10px;
+                text-align: right;
+              }
+              
+              .eclipse-dot::after {
+                content: '\2807';
+                font-size: 30px;
+              }
+
+            nb-card {
+                height: 220px;
+            }
+        }
     }
 
-    h2 {
+    .header-title {
         color: #333333;
+        font-size: 32px;
         font-weight: bold;
+        line-height: 30px;
     }
-}
-
-test {
-    border-style: solid;
 }

@@ -1,0 +1,25 @@
+<nb-card>
+  <div  class="news-card">
+      <div class="image-section">
+          <ngx-card-images [images] = "news.Images"></ngx-card-images>
+      </div>
+      <div class="card-section">
+        <div class="eclipse-dot"></div>
+        <div class="card-title" ng-class>{{news.Title}}</div>
+        <div class="card-content">
+          <div [ngClass] = "{'text-container' : !isExpanded}">
+              <span [ngClass] = "{'text-content' : !isExpanded}"><p id = "{{textContainerId}}">{{news.Content}}</p>
+                  <div class="ellipsis" *ngIf="isExceedLineLimit">...</div>
+                </span>
+          </div>
+          
+        </div>
+        <div class="card-detail">
+          Posted by: <b class="card-detail-content">{{news.PostedBy}}   |</b>   Date: <b class="card-detail-content">{{news.PublishedDate | date:'MM/dd/yyyy'}}</b>
+          <a class="btn-show-more" *ngIf="isExceedLineLimit" (click)="expandBtnClick()">{{isExpanded? 'Show less' : 'Show more'}} 
+            <i class="fas " [ngClass]="{'fa-angle-double-down' : !isExpanded, 'fa-angle-double-up' : isExpanded}"></i>
+          </a>
+        </div>
+      </div>
+  </div>
+</nb-card>
