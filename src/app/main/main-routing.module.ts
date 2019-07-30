@@ -14,6 +14,10 @@ const routes: Routes = [
         loadChildren: './miscellaneous/miscellaneous.module#MiscellaneousModule'
       },
       {
+        path: 'contacts',
+        loadChildren: './contacts/contacts.module#ContactsModule'
+      },
+      {
         path: '',
         redirectTo: 'dashboard',
         pathMatch: 'full'

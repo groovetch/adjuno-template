@@ -4,6 +4,7 @@ import { MainComponent } from './main.component';
 import { MainRoutingModule } from './main-routing.module';
 import { ThemeModule } from '../@theme/theme.module';
 import { MiscellaneousModule } from './miscellaneous/miscellaneous.module';
+import { ContactsComponent } from './contacts/contacts.component';
 
 const MAIN_COMPONENTS = [
   MainComponent,

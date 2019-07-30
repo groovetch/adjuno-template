@@ -1,0 +1,57 @@
+.contact-content {
+    .contact-box-wrapper {
+        width: 100%;
+    }
+
+    .add-contact-button {
+        background-color: #8DC63F;
+        border-radius: 5px;
+        color: #FFFFFF;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 15px;
+        height: 50px;
+        position: relative;
+        width: 230px;
+
+        span {
+            margin-top: 4px;
+
+            .fa-circle {
+                background-color: #FFFFFF;
+                border-radius: 50%;
+                margin-top: 6px;
+                margin-left: 10px;
+                opacity: 0.3;
+            }
+
+            .fa-plus {
+                margin-top: 6px;
+                margin-left: 10px;
+                font-size: 16px;
+            }
+        }
+
+        .btn-content {
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 15px;
+            margin-left: 20px;
+            position: absolute;
+            text-transform: uppercase;
+        }
+    }
+
+    .contact-list {
+        margin-top: 25px;
+    }
+
+    h2 {
+        color: #333333;
+        font-weight: bold;
+    }
+}
+
+test {
+    border-style: solid;
+}
