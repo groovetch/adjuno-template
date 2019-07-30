@@ -1,0 +1,47 @@
+nb-card {
+  height: 270px;
+  width: 270px;
+  border: 1px solid #E8E8ED;
+  display: block;
+  text-align: center;
+}
+
+.item {
+  background-color: #8DC63F;
+  color: #FFFFFF;
+}
+
+.add-item {
+  background-color: #FFFFFF;
+  color: #666666;
+}
+
+.fa-ellipsis-v {
+  padding-top: 20px;
+  padding-right: 20px;
+  float: right;
+}
+
+.title {
+  font-family: "Nunito Sans";
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: center;
+  margin-top: 42px;
+  margin-bottom: 50px;
+}
+
+.icon {
+  height: 145px;
+  width: 120px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+#add-icon {
+  width: 120px;
+  height: 120px;
+  margin-top: 50px;
+  margin-left: 20px;
+}

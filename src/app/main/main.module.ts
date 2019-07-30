@@ -9,7 +9,12 @@ import { NewsModule } from './news/news.module';
 const MAIN_COMPONENTS = [MainComponent];
 
 @NgModule({
-  imports: [MainRoutingModule, ThemeModule, MiscellaneousModule, NewsModule],
+  imports: [
+    MainRoutingModule, 
+    ThemeModule, 
+    MiscellaneousModule, 
+    NewsModule,
+  ],
   declarations: [...MAIN_COMPONENTS]
 })
 export class MainModule {}
