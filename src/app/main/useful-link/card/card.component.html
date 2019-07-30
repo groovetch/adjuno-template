@@ -1,0 +1,11 @@
+<nb-card>
+  <div class="useful-link-card">
+    <div class="card-section">
+      <div class="card-header">{{usefulLinks.GroupTitleName}}</div>
+      <div class="card-separation"></div>
+      <div class="card-link" *ngFor="let link of usefulLinks.LinkList">
+        <a href="{{link.Link}}">{{link.Description}}</a>
+      </div>
+    </div>
+  </div>
+</nb-card>

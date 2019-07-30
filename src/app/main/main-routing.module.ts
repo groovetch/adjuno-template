@@ -23,6 +23,10 @@ const routes: Routes = [
         loadChildren: './news/news.module#NewsModule'
       },
       {
+        path: 'useful-link',
+        loadChildren: './useful-link/useful-link.module#UsefulLinkModule'
+      },
+      {
         path: '**',
         component: NotFoundComponent
       }
