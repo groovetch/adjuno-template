@@ -9,6 +9,14 @@ nb-card {
     font-weight: 800;
     line-height: 30px;
     text-align: center;
+
+    .close {
+      width: 18px;
+    }
+
+    p {
+      padding-top: 20px;
+    }
   }
 
   nb-card-body {
