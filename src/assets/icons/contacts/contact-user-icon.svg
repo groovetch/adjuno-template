@@ -1,0 +1,41 @@
+<svg id="user-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="149" height="150" viewBox="0 0 149 150">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-1 {
+        opacity: 0.1;
+        filter: url(#filter);
+      }
+
+      .cls-2 {
+        fill: #aac1c9;
+        opacity: 0.3;
+      }
+
+      .cls-4, .cls-5 {
+        fill: none;
+        stroke: #8dc63f;
+        stroke-width: 3px;
+      }
+
+      .cls-5 {
+        fill-rule: evenodd;
+      }
+    </style>
+    <filter id="filter" x="0" y="0" width="149" height="150" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dy="15" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="3.873"/>
+      <feFlood result="flood" flood-color="#d3e2eb" flood-opacity="0.3"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <circle class="cls-1" cx="74" cy="60" r="60"/>
+  <circle id="Ellipse_1_copy" data-name="Ellipse 1 copy" class="cls-2" cx="75" cy="62" r="50"/>
+  <circle id="Ellipse_1_copy_2" data-name="Ellipse 1 copy 2" class="cls-3" cx="74" cy="60" r="50"/>
+  <circle class="cls-4" cx="74" cy="42.69" r="11.5"/>
+  <path class="cls-5" d="M460,1441a23,23,0,1,1,46,0" transform="translate(-409 -1360)"/>
+</svg>
