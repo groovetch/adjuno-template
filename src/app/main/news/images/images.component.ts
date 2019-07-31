@@ -10,5 +10,7 @@ export class ImagesComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.images = this.images.filter(x => x.length > 0);
+  }
 }

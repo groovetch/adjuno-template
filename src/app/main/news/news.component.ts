@@ -16,7 +16,8 @@ export class NewsComponent implements OnInit {
         'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
       PublishedDate: new Date(),
       Images: ['./assets/images/camera1.jpg'],
-      PostedBy: 'Hoang Ha'
+      PostedBy: 'Hoang Ha',
+      Suppliers: [0, 1]
     },
     {
       Title: 'Test Title 2',
@@ -26,7 +27,8 @@ export class NewsComponent implements OnInit {
         when an unknown printer took a galley of type and scrambled it to make a type specimen book.`,
       PublishedDate: new Date(),
       Images: ['./assets/images/camera1.jpg', './assets/images/camera2.jpg'],
-      PostedBy: 'Hoang Ha'
+      PostedBy: 'Hoang Ha',
+      Suppliers: [1, 2]
     },
     {
       Title: 'Test Title 3',
@@ -44,7 +46,8 @@ export class NewsComponent implements OnInit {
         './assets/images/camera2.jpg',
         './assets/images/camera3.jpg'
       ],
-      PostedBy: 'Hoang Ha'
+      PostedBy: 'Hoang Ha',
+      Suppliers: []
     },
     {
       Title: 'Test Title 4',
@@ -62,7 +65,8 @@ export class NewsComponent implements OnInit {
         './assets/images/camera3.jpg',
         './assets/images/camera4.jpg'
       ],
-      PostedBy: 'Hoang Ha'
+      PostedBy: 'Hoang Ha',
+      Suppliers: []
     },
     {
       Title: 'Test Title 5',
@@ -76,7 +80,8 @@ export class NewsComponent implements OnInit {
         Aldus PageMaker including versions of Lorem Ipsum`,
       PublishedDate: new Date(),
       Images: [],
-      PostedBy: 'Hoang Ha'
+      PostedBy: 'Hoang Ha',
+      Suppliers: []
     }
   ];
   constructor(private modalService: NgbModal) {}
@@ -85,6 +90,11 @@ export class NewsComponent implements OnInit {
 
   onNewStoryBtnClick() {
     const modalRef = this.modalService.open(NewsModalComponent, { size: 'lg' });
-    modalRef.componentInstance.news = this.data[0];
+
+    modalRef.result.then((result) => {
+      if(result) {
+        this.data.push(result);
+      }
+    })
   }
 }

@@ -10,7 +10,13 @@ import { UsefulLinkModule } from './useful-link/useful-link.module';
 const MAIN_COMPONENTS = [MainComponent];
 
 @NgModule({
-  imports: [MainRoutingModule, ThemeModule, MiscellaneousModule, NewsModule, UsefulLinkModule],
+  imports: [
+    MainRoutingModule, 
+    ThemeModule, 
+    MiscellaneousModule, 
+    NewsModule,
+    UsefulLinkModule
+  ],
   declarations: [...MAIN_COMPONENTS]
 })
 export class MainModule {}

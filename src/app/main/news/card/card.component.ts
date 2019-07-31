@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { News } from '../news.model';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { NewsModalComponent } from '../news-modal/news-modal.component';
 
 @Component({
   selector: 'ngx-news-card',
@@ -13,7 +15,7 @@ export class CardComponent implements OnInit {
   isExpanded: boolean = false;
   isExceedLineLimit: boolean = false;
 
-  constructor() {}
+  constructor( private modalService: NgbModal) {}
 
   ngOnInit() {
     this.textContainerId = `text-container-${this.cardId}`;
@@ -32,5 +34,16 @@ export class CardComponent implements OnInit {
 
   expandBtnClick() {
     this.isExpanded = !this.isExpanded;
+  }
+
+  onEditBtnClick() {
+    const modalRef = this.modalService.open(NewsModalComponent, { size: 'lg' });
+    modalRef.componentInstance.news = this.news;
+
+    modalRef.result.then((result) => {
+      if(result) {
+        this.news = result;
+      }
+    })
   }
 }
