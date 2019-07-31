@@ -1,30 +1,120 @@
-<div class="news-modal">
+<div class="news-modal" [formGroup]="storyForm">
     <div class="news-modal-header">
         <h4 class="news-modal-title">Add New Story</h4>
-        <button type="button" class="close btn-close-modal" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+        <button type="button" class="close btn-close-modal" aria-label="Close" (click)="close()">
             <span aria-hidden="true">&times;</span>
         </button>
       </div>
 
       <div class="news-modal-body">
         <div class="modal-input-group form-group">
-          <p>Headline</p>
-          <input type="text" class="modal-input form-control"/>
+          <label class ="required">Headline</label>
+          <input type="text" nbInput  class="modal-input form-control" [(ngModel)] = "editedModel.Title" formControlName="title"/>
         </div>
-        <div class="modal-input-group form-group">
-          <p>Content</p>
-          <ckeditor [editor]="Editor" data=""></ckeditor>
+        <div class="modal-input-group form-group content-group">
+          <label class="required">Content</label>
+          <ckeditor [editor]="Editor" data="" class="editor"  [(ngModel)] = "editedModel.Content" formControlName="content"></ckeditor>
         </div>
-        <div class="modal-input-group form-group">
-          <div class="col-md-6">
-            <p class="input-label">Atttachments</p>
+        <div class="modal-input-group form-group content-group">
+          <div class="col-md-6 attachment-group">
+            <label class="input-label">Atttachments</label>
             <div class="attachment-insert">
+              <div>
+                <!--image 1-->
+                <div class="image-section left" >
+                    <a class="delete-btn" (click)="removeImage('image1Url')" *ngIf="editedModel.Images && editedModel.Images[0]"><span aria-hidden="true">&times;</span></a>
+                    <a (click)="openImageSelector('imageInput1')">
+                        <div class="image-frame">
+                          <input id="imageInput1" #fileInput1 type="file" accept="image/*" (change)="preview(fileInput1.files, 'image1')">
+                          <img [src]="editedModel.Images[0]" *ngIf="editedModel.Images && editedModel.Images[0]" id="image1"/>
+                          <div class="plus-button" *ngIf="!editedModel.Images || !editedModel.Images[0]"></div>
+                        </div>
+                    </a>
+                </div>
+
+                <!--image 2-->
+                <div class="image-section right">
+                    <a class="delete-btn" (click)="removeImage('image2Url')" *ngIf="editedModel.Images && editedModel.Images[1]"><span aria-hidden="true">&times;</span></a>
+                    <a (click)="openImageSelector('imageInput2')">
+                        <div class="image-frame">
+                            <input id="imageInput2" #fileInput2 type="file" accept="image/*" (change)="preview(fileInput2.files, 'image2')">
+                            <img [src]="editedModel.Images[1]" *ngIf="editedModel.Images && editedModel.Images[1]" id="image2"/>
+                          <div class="plus-button" *ngIf="!editedModel.Images || !editedModel.Images[1]"></div>
+                        </div>
+                    </a>
+                </div>
+              </div>
+
+              <div>
+                <!--image 3-->
+                <div class="image-section left">
+                    <a class="delete-btn" (click)="removeImage('image3Url')" *ngIf="editedModel.Images && editedModel.Images[2]"><span aria-hidden="true">&times;</span></a>
+                    <a (click)="openImageSelector('imageInput3')">
+                        <div class="image-frame">
+                            <input id="imageInput3" #fileInput3 type="file" accept="image/*" (change)="preview(fileInput3.files, 'image3')">
+                            <img [src]="editedModel.Images[2]" *ngIf="editedModel.Images && editedModel.Images[2]" id="image3"/>
+                          <div class="plus-button" *ngIf="!editedModel.Images || !editedModel.Images[2]"></div>
+                        </div>
+                    </a>
+                </div>
+
+                <!--image 4-->
+                <div class="image-section right">
+                    <a class="delete-btn" (click)="removeImage('image4Url')" *ngIf="editedModel.Images && editedModel.Images[3]"><span aria-hidden="true">&times;</span></a>
+                    <a (click)="openImageSelector('imageInput4')">
+                        <div class="image-frame">
+                            <input id="imageInput4" #fileInput4 type="file" accept="image/*" (change)="preview(fileInput4.files, 'image4')">
+                            <img [src]="editedModel.Images[3]" *ngIf="editedModel.Images && editedModel.Images[3]" id="image4"/>
+                          <div class="plus-button" *ngIf="!editedModel.Images || !editedModel.Images[3]"></div>
+                        </div>
+                    </a>
+                </div>
+
+              </div>
 
             </div>
           </div>
-          <div class="col-md-6">
-            <p class="">Publish to</p>
+           <!--Publish to section-->
+          <div class="col-md-6 publish-to-group">
+            <label class="input-label required">Publish to</label>
+            <div class="supplier-group" [ngClass]="{'invalid': storyForm.controls['suppliers'].valid == false && storyForm.controls['suppliers'].touched == true}">
+              <div class="supplier-input select-all">
+                  <label class="container">Supplier name
+                      <input type="checkbox" (click)="selectAllSupplier()" [checked]="editedModel.Suppliers.length > 0">
+                      <span class="checkmark"></span>
+                  </label>
+              </div>
+              <div class="list-supplier">
+                <div class="viewport">
+                    <div *ngFor="let supplier of mockDataSupplier" class="supplier-input">
+                        <label class="container">{{supplier.Value}}
+                            <input type="checkbox" [checked] = "editedModel.Suppliers.indexOf(supplier.Id) != -1 ? true: false" (click)="onClickCheckboxSupplier(supplier.Id)">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+
+              </div>
+
+              <div class="blur-section">
+
+              </div>
+            </div>
           </div>
+
+          <!--End of publish to section-->
+
+          <!--Modal button-->
+
+          <div class="news-modal-footer">
+            <div class="col-md-6 btn-section left">
+              <a class="cancel-button" (click)="close()">Cancel</a>
+            </div>
+            <div class="col-md-6 btn-section right">
+              <a class="save-button" (click)="save()">Save</a>
+            </div>
+          </div>
+
         </div>
       </div>
 </div>
