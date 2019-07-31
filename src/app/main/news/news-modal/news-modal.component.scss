@@ -313,6 +313,14 @@
   .supplier-group.invalid {
     border: 1px solid rgb(255, 0, 0);
   }
+
+  .blur-section {
+    height: 54px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    top: 165px;
+  }
 }
 
 :host ::ng-deep .ck-editor__editable_inline {
