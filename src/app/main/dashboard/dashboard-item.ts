@@ -2,22 +2,22 @@ export const DASHBOARD_ITEMS = [
     {
         title: 'NEWS',
         icon: 'news.svg',
-        link: '#'
+        link: '#/main/news'
     }, {
         title: 'CONTACTS',
         icon: 'contacts.svg',
-        link: '#'
+        link: '#/main/contacts'
     }, {
         title: 'USEFUL LINKS',
         icon: 'user-link.svg',
-        link: '#'
+        link: '#/main/usefulllink'
     }, {
         title: 'DOCUMENTS',
         icon: 'document.svg',
-        link: '#'
+        link: '#/main/documents'
     }, {
         title: 'CREATE SAMPLE',
         icon: 'sample.svg',
-        link: '#'
+        link: '#/main/sample'
     },
 ];
