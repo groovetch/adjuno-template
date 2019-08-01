@@ -3,16 +3,18 @@
     <div class="col-md-3 d-flex justify-content-center" *ngFor="let item of items">
       <nb-card class="item">
         <nb-card-body>
-          <i class="fas fa-ellipsis-v fa-2x"></i>
+          <img class="dot-menu float-right" src="../../../assets/dashboard-icon/dot-menu.svg">
           <img class="icon" src="../../../assets/dashboard-icon/{{item.icon}}">
-          <p class="title">{{item.title}}</p>
+          <p class="title">
+            <a href="./{{item.link}}">{{item.title}}</a>
+          </p>
         </nb-card-body>
       </nb-card>
     </div>
     <div class="col-md-3 d-flex justify-content-center">
-      <nb-card class="add-item">
+      <nb-card class="add-item" (click)="onCreateTitle()">
         <nb-card-body>
-          <i class="fas fa-ellipsis-v fa-2x"></i>
+          <img class="dot-menu float-right" src="../../../assets/dashboard-icon/dot-menu-dark.svg">
           <img class="add-icon" src="../../../assets/dashboard-icon/add.svg">
           <p class="title">ADD A TITLE</p>
         </nb-card-body>

@@ -1,0 +1,72 @@
+nb-card {
+  max-width: 571px;
+
+  nb-card-header {
+    border: none;
+    color: #242a32;
+    font-family: 'Nunito Sans';
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 30px;
+    text-align: center;
+
+    .close {
+      width: 18px;
+    }
+
+    p {
+      padding-top: 20px;
+    }
+  }
+
+  nb-card-body {
+    margin: 0 64px;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  nb-card-footer {
+    margin: 0 64px 40px;
+    padding: 0;
+    border: none;
+  }
+}
+
+label {
+  color: #666666;
+  font-family: 'Nunito Sans';
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.description {
+  color: #666666;
+  font-family: 'Nunito Sans';
+  font-size: 12px;
+  line-height: 30px;
+}
+
+.custom-select {
+  background-image: url('../../../../assets/dashboard-icon/drop-down-arrow.svg');
+}
+
+.cancel {
+  background-color: #a5a5a5;
+}
+
+.create {
+  background-color: #8ac53f;
+}
+
+.custom-carousel {
+  background-color: #8ac53f;
+  margin-bottom: 1rem;
+
+  .icon {
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}

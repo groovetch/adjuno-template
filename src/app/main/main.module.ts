@@ -5,7 +5,7 @@ import { MainRoutingModule } from './main-routing.module';
 import { ThemeModule } from '../@theme/theme.module';
 import { MiscellaneousModule } from './miscellaneous/miscellaneous.module';
 import { NewsModule } from './news/news.module';
-import { UsefulLinkModule } from './useful-link/useful-link.module';
+import { DocumentsComponent } from './documents/documents.component';
 
 const MAIN_COMPONENTS = [MainComponent];
 
@@ -15,8 +15,7 @@ const MAIN_COMPONENTS = [MainComponent];
     ThemeModule, 
     MiscellaneousModule, 
     NewsModule,
-    UsefulLinkModule
   ],
-  declarations: [...MAIN_COMPONENTS]
+  declarations: [...MAIN_COMPONENTS, DocumentsComponent]
 })
 export class MainModule {}

@@ -83,16 +83,21 @@ export class NewsModalComponent implements OnInit {
     };
   }
 
-  removeImage(imageId) {
+  removeImage(imageId, files) {
+    files = null;
     switch (imageId) {
       case 'image1Url':
         this.editedModel.Images[0] = null;
+        break;
       case 'image2Url':
         this.editedModel.Images[1] = null;
+        break;
       case 'image3Url':
         this.editedModel.Images[2] = null;
+        break;
       case 'image4Url':
         this.editedModel.Images[3] = null;
+        break;
     }
   }
 
@@ -117,7 +122,7 @@ export class NewsModalComponent implements OnInit {
   }
 
   selectAllSupplier() {
-    if (this.editedModel.Suppliers && this.editedModel.Suppliers.length > 0){
+    if (this.editedModel.Suppliers && this.editedModel.Suppliers.length == this.mockDataSupplier.length){
       this.editedModel.Suppliers = [];
     }
     else{
