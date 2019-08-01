@@ -47,6 +47,10 @@
     vertical-align: top;
     position: relative;
 
+    a {
+      cursor: pointer;
+    }
+
     &.left {
       margin-right: 10px;
       margin-bottom: 20px;

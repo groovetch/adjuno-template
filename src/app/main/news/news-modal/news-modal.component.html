@@ -1,7 +1,7 @@
 <div class="news-modal" [formGroup]="storyForm">
     <input type="text" style="display:none" />
     <div class="news-modal-header">
-        <h4 class="news-modal-title">{{eventType}} New Story</h4>
+        <h4 class="news-modal-title">{{eventType == 'Add'? 'Add New Story' : 'Edit Story'}}</h4>
         <button type="button" class="close btn-close-modal" aria-label="Close" (click)="close()">
             <span aria-hidden="true">&times;</span>
         </button>
