@@ -21,8 +21,6 @@ import { StateService } from '../../../@core/utils';
         <ngx-header [position]="sidebar.id === 'start' ? 'normal': 'inverse'"></ngx-header>
       </nb-layout-header>
 
-      
-
       <nb-layout-column class="main-content">
         <ng-content select="router-outlet"></ng-content>
       </nb-layout-column>
@@ -38,9 +36,7 @@ import { StateService } from '../../../@core/utils';
       <nb-layout-footer fixed>
         <ngx-footer></ngx-footer>
       </nb-layout-footer>
-      
     </nb-layout>
-    
   `,
 })
 export class SampleLayoutComponent implements OnDestroy {

@@ -1,3 +1,8 @@
+.container {
+  max-width: 1200px;
+  margin-top: 26px;
+}
+
 nb-card {
   height: 270px;
   width: 270px;
@@ -16,10 +21,10 @@ nb-card {
   color: #666666;
 }
 
-.fa-ellipsis-v {
-  padding-top: 20px;
-  padding-right: 20px;
-  float: right;
+.dot-menu {
+  height: 25px;
+  margin-top: 20px;
+  margin-right: 20px;
 }
 
 .title {
@@ -30,18 +35,22 @@ nb-card {
   text-align: center;
   margin-top: 42px;
   margin-bottom: 50px;
+
+  a {
+    color: #ffffff;
+  }
 }
 
 .icon {
   height: 145px;
   width: 120px;
   margin-top: 20px;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 .add-icon {
   width: 120px;
   height: 120px;
   margin-top: 50px;
-  margin-left: 20px;
+  margin-left: 10px;
 }

@@ -1,5 +1,16 @@
 .news-modal {
   font-family: 'Nunito Sans';
+  position: relative;
+
+  .btn-close-modal {
+    height: 18px;
+    width: 18px;
+    font-size: 36px;
+    line-height: 30px;
+    top: -30px;
+    right: 20px;
+    position: absolute;
+  }
 
   .news-modal-header {
     text-align: center;
@@ -20,7 +31,291 @@
     padding-right: 70px;
   }
 
-  .ck-editor__editable_inline {
-    min-height: 200px;
+  .attachment-group {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 0;
+  }
+
+  .publish-to-group {
+    display: inline-block;
+    padding-right: 0;
+  }
+
+  .image-section {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+
+    &.left {
+      margin-right: 10px;
+      margin-bottom: 20px;
+    }
+
+    &.right {
+      margin-left: 10px;
+      margin-bottom: 20px;
+    }
+
+    .delete-btn {
+      height: 20px;
+      width: 20px;
+      border: 1px solid #d7d7d7;
+      background-color: #ec4646;
+      color: #fff;
+      position: absolute;
+      right: 1px;
+      top: 1px;
+      z-index: 99;
+      text-align: center;
+    }
+  }
+
+  .image-frame {
+    width: 120px;
+    height: 80px;
+    border: 1px solid #d7d7d7;
+    border-style: dashed;
+    text-align: center;
+    position: relative;
+
+    input {
+      display: none;
+    }
+
+    img {
+      width: 120px;
+      height: 80px;
+      object-fit: cover;
+    }
+  }
+
+  .plus-button {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin-top: 18px;
+    margin-left: 40px;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      background-color: white;
+      transition: transform 0.25s ease-out;
+    }
+
+    /* Vertical line */
+    &::before {
+      margin-top: 10px;
+      left: 50%;
+      width: 2px;
+      height: 20px;
+      margin-left: -2px;
+      background-color: #b9c3cf;
+    }
+
+    /* horizontal line */
+    &::after {
+      top: 51%;
+      left: 28;
+      margin-left: -11px;
+      width: 20px;
+      height: 2px;
+      margin-top: -2px;
+      background-color: #b9c3cf;
+    }
+  }
+
+  .supplier-input {
+    height: 38px;
+    width: 100%;
+    max-width: 320px;
+    padding-top: 8px;
+    padding-left: 10px;
+
+    &.select-all {
+      background-color: #e7edf1;
+    }
+
+    //Custom  checkbox
+    .container {
+      display: block;
+      position: relative;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      font-family: 'Nunito Sans';
+      font-size: 16px;
+      line-height: 25px;
+      padding-left: 45px;
+    }
+
+    /* Hide the browser's default checkbox */
+    .container input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+
+    /* Create a custom checkbox */
+    .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 24px;
+      width: 24px;
+      background-color: #fff;
+      border: 1px solid #e1e1e1;
+    }
+
+    /* On mouse-over, add a grey background color */
+    .container:hover input ~ .checkmark {
+      background-color: #ccc;
+    }
+
+    /* When the checkbox is checked, add a green background */
+    .container input:checked ~ .checkmark {
+      background-color: #8ac53f;
+    }
+
+    /* Create the checkmark/indicator (hidden when not checked) */
+    .checkmark::after {
+      content: '';
+      position: absolute;
+      display: none;
+    }
+
+    /* Show the checkmark when checked */
+    .container input:checked ~ .checkmark::after {
+      display: block;
+    }
+
+    /* Style the checkmark/indicator */
+    .container .checkmark::after {
+      left: 9px;
+      top: 4px;
+      width: 7px;
+      height: 11px;
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+
+    //End of custom checkbox
+  }
+
+  .cancel-button {
+    height: 54px;
+    width: 100%;
+    max-width: 320px;
+    display: inline-block;
+    text-align: center;
+    background-color: #a5a5a5;
+    color: #ffffff;
+    font-family: 'Nunito Sans';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 50px;
+    cursor: pointer;
+  }
+
+  .save-button {
+    height: 54px;
+    width: 100%;
+    max-width: 320px;
+    display: inline-block;
+    text-align: center;
+    background-color: #8ac53f;
+    color: #ffffff;
+    font-family: 'Nunito Sans';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 50px;
+    right: 0;
+    cursor: pointer;
+
+    @media screen and (max-width: 767px) {
+      right: unset;
+    }
+  }
+
+  .news-modal-footer {
+    position: relative;
+    margin-top: 37px;
+  }
+
+  .left {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .right {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .btn-section {
+    display: inline-block;
+    vertical-align: top;
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
+  }
+
+  .viewport {
+    width: 100%;
+    height: 150px;
+    overflow-y: scroll;
+  }
+
+  .input-label {
+    color: #333333;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+
+  .content-group {
+    margin-top: 30px;
+  }
+
+  label.required::after {
+    color: #e32;
+    content: ' *';
+    display: inline;
+  }
+
+  .form-control.ng-invalid.ng-touched {
+    border: 1px solid rgb(255, 0, 0);
+  }
+
+  .supplier-group.invalid {
+    border: 1px solid rgb(255, 0, 0);
+  }
+
+  .blur-section {
+    height: 54px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    top: 165px;
+  }
+}
+
+:host ::ng-deep .ck-editor__editable_inline {
+  min-height: 200px;
+}
+
+:host ::ng-deep .editor.ng-invalid.ng-touched {
+  .ck-rounded-corners {
+    border: 1px solid rgb(255, 0, 0);
   }
 }
