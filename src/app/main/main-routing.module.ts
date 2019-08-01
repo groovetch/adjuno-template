@@ -27,6 +27,10 @@ const routes: Routes = [
         loadChildren: './news/news.module#NewsModule'
       },
       {
+        path: 'documents',
+        loadChildren: './documents/documents.module#DocumentsModule'
+      },
+      {
         path: 'contacts',
         loadChildren: './contacts/contacts.module#ContactsModule'
       },

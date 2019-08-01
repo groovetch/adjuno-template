@@ -224,6 +224,7 @@
     font-weight: 600;
     line-height: 50px;
     cursor: pointer;
+    border-radius: 2.5px;
   }
 
   .save-button {
@@ -240,6 +241,7 @@
     line-height: 50px;
     right: 0;
     cursor: pointer;
+    border-radius: 2.5px;
 
     @media screen and (max-width: 767px) {
       right: unset;
@@ -294,11 +296,11 @@
   }
 
   .form-control.ng-invalid.ng-touched {
-    border: 1px solid rgb(255, 0, 0);
+    border: 1px solid #f22626;
   }
 
   .supplier-group.invalid {
-    border: 1px solid rgb(255, 0, 0);
+    border: 1px solid #f22626;
   }
 
   .blur-section {
@@ -316,6 +318,6 @@
 
 :host ::ng-deep .editor.ng-invalid.ng-touched {
   .ck-rounded-corners {
-    border: 1px solid rgb(255, 0, 0);
+    border: 1px solid #f22626;
   }
 }
