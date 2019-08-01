@@ -1,0 +1,59 @@
+<nb-card>
+  <div class='create-or-edit-contact-header'>
+      <div class="row">
+          <div class="col-3">
+              <img class="pop-up-bg-contact" src="../../../../assets/icons/contacts/pop-up-bg.svg">
+              <img class="contact-user-icon" src="../../../../assets/icons/contacts/contact-user-icon.svg">
+          </div>
+      
+          <div class="col-6 contact-content-title">
+            <div class="d-flex justify-content-center title">
+                <h1>Add New Contact</h1>
+            </div>
+            <div class="d-flex justify-content-center">
+                <div class="row">
+                  <div class="col-6">
+                      <label for="inputTitleName">First Name</label>
+                      <input type="text" class="form-control" id="inputTitleName" name="titleName">
+                  </div>
+                  <div class="col-6">
+                      <label for="inputTitleName">Surname</label>
+                      <input type="text" class="form-control input-surname" id="inputTitleName" name="titleName">
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="col-1"></div>
+          <div class="col-2">
+              <img class="contact-icon-close" src="../../../../assets/icons/contacts/close.svg" (click)="cancel()">
+          </div>
+        </div>
+  </div>
+  
+  <div class='create-or-edit-contact-body'>
+      <div class="row">
+          <div class="col-1"></div>
+          <div class="col-10">
+            <div class="d-flex justify-content-center">
+                <div class="col-sm-6">
+                    <label for="inputTitleName">Company</label>
+                    <input type="text" class="form-control" id="inputTitleName" name="titleName">
+                    <label for="inputTitleName">Job Title</label>
+                    <input type="text" class="form-control" id="inputTitleName" name="titleName">
+                    <label for="inputTitleName">Phone Number</label>
+                    <input type="text" class="form-control" id="inputTitleName" name="titleName">
+                </div>
+                <div class="col-sm-6">
+                    <label for="inputTitleName">Department</label>
+                    <input type="text" class="form-control" id="inputTitleName" name="titleName">
+                    <label for="inputTitleName">Country</label>
+                    <input type="text" class="form-control" id="inputTitleName" name="titleName">
+                    <label for="inputTitleName">Email Address</label>
+                    <input type="text" class="form-control" id="inputTitleName" name="titleName">
+                </div>
+            </div>
+          </div>
+          <div class="col-1"></div>
+        </div>
+  </div>
+</nb-card>

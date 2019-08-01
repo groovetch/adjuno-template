@@ -1,0 +1,39 @@
+nb-card {
+    border-radius: 12px;
+    height: 808px;
+    width: 771px;
+
+    .create-or-edit-contact-header {
+        .contact-content-title {
+            margin-top: 20px;
+
+            .input-surname {
+                width: 170%;
+            }
+
+            .title {
+                font-weight: bold;
+                line-height: 60px;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+        }
+
+        .contact-icon-close {
+            cursor: pointer;
+        }
+
+        .contact-user-icon {
+            margin-top: 32%;
+            margin-left: 20%;
+            position: absolute;
+            width: 85%;
+        }
+
+        .pop-up-bg-contact {
+            position: absolute;
+            width: 90%;
+        }
+        
+    }
+}
