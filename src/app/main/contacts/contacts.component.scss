@@ -52,6 +52,10 @@
         margin-top: 5px;
 
         .contact-card-list {
+            .bg-contact {
+                width: 80%;
+                position: absolute;
+            }
 
             .card-section {
                 margin-top: 35px;
@@ -67,6 +71,8 @@
                 }
 
                 .card-title {
+                    width: 120%;
+                    
                     .contact-description {
                         color: #666666;
                         font-size: 16px;
@@ -87,7 +93,9 @@
             }
 
             .contact-user-icon {
-                margin-top: -110px;
+                margin-top: 7%;
+                width: 100%;
+                position: absolute;
             }
 
             .eclipse-dot {
