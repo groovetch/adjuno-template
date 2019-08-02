@@ -227,7 +227,7 @@
   font-family: 'Nunito Sans';
 
   .dropdown-menu {
-    padding-top: 0px;
+    padding-top: 0;
   }
 
   .notification {
@@ -246,13 +246,13 @@
   }
 
   .username {
-    color: #242A32;
+    color: #242a32;
     font-size: 1rem;
     line-height: 30px;
   }
 
   .avatar {
-    background-color: #8DC63F;
+    background-color: #8dc63f;
     width: 44px;
     border-radius: 50%;
     margin-left: 8px;
@@ -269,7 +269,7 @@
     }
 
     span {
-      color: #242A32;
+      color: #242a32;
       font-size: 16px;
       line-height: 30px;
       text-align: right;
@@ -278,7 +278,7 @@
 
   .notify-item {
     height: 76px;
-    border-bottom: 1px solid #E8E8ED;
+    border-bottom: 1px solid #e8e8ed;
     padding-top: 16px;
 
     .notify-image {
@@ -288,7 +288,7 @@
     }
 
     p {
-      color: #242A32;
+      color: #242a32;
       font-size: 16px;
       font-weight: bold;
       margin-bottom: 0.5rem;
@@ -303,7 +303,7 @@
 
     .default {
       color: #666666;
-      background-color: #F5F6FA;
+      background-color: #f5f6fa;
     }
 
     .danger {
@@ -320,6 +320,6 @@
   }
 
   .dropdown-item:hover {
-    background-color: #EBF1F5;
+    background-color: #ebf1f5;
   }
 }
