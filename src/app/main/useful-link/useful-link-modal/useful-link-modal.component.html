@@ -1,0 +1,70 @@
+<nb-card>
+  <nb-card-header>
+    <img class="close" src="assets/dashboard-icon/close.svg" (click) = "close()">
+    <p>Add New Link</p>
+  </nb-card-header>
+  <nb-card-body>
+    <div class="new-link-groupname">
+      <div>
+          <span class="group-title">Group Title Name</span>
+          <span class="asterisk-required">*</span>
+        </div>
+      <div class="group-input">
+          <input nbInput fullWidth="true" shape="rectangle" fieldSize="large">
+      </div>
+    </div>
+    <div class="required-fields">
+      <div class="required-field-title">REQUIRED FIELDS<span class="asterisk-required">*</span></div>
+        <div class="group-input">
+          <div class="row">
+            <div class="col-sm-10">
+              <input nbInput fullWidth="true" shape="rectangle" fieldSize="large" placeholder="Description">
+            </div>
+            <div class="col-sm-10">
+                <input nbInput fullWidth="true" shape="rectangle" fieldSize="large" placeholder="Enter link">
+            </div>
+            <div class="col-sm-2">
+                <img class="icon-remove" src="assets/useful-link-icon/add.svg">
+            </div>
+          </div>
+        </div>
+        <div class="group-input">
+            <div class="row">
+              <div class="col-sm-10">
+                <input nbInput fullWidth="true" shape="rectangle" fieldSize="large" placeholder="Description">
+              </div>
+              <div class="col-sm-10">
+                  <input nbInput fullWidth="true" shape="rectangle" fieldSize="large" placeholder="Enter link">
+              </div>
+              <div class="col-sm-2">
+                  <img class="icon-add" src="assets/useful-link-icon/add.svg">
+              </div>
+            </div>
+          </div>
+    </div >
+    <div class="publish-to">
+      <div class="required-field-title">PUBLISH TO<span class="asterisk-required">*</span></div>
+      <div class="row">
+        <div class="col-sm-12 user-group-checkbox supplier-name">
+          <nb-checkbox status="success">Supplier Name</nb-checkbox>
+        </div>
+        <div class="col-sm-12 user-group-checkbox">
+            <nb-checkbox status="success">Supplier 1</nb-checkbox>
+        </div>
+        <div class="col-sm-12 user-group-checkbox" >
+            <nb-checkbox status="success">Supplier 2</nb-checkbox>
+          </div>
+      </div>
+    </div>
+  </nb-card-body>
+  <nb-card-footer>
+    <div class="row">
+      <div class="col-sm-6">
+        <button class="btn btn-block cancel" (click) = "close()" >Cancel</button>
+      </div>
+      <div class="col-sm-6">
+        <button class="btn btn-block create" (click) = "close()">Save</button>
+      </div>
+    </div>
+  </nb-card-footer>
+</nb-card>

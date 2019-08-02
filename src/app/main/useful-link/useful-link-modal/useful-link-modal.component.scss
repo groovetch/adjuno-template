@@ -1,0 +1,79 @@
+
+nb-card{
+    width: 571px;
+    background-color: #FFFFFF;
+    font-family: "Nunito Sans";
+
+    .close {
+        width: 18px;
+      }
+    nb-card-header{	
+        color: #242A32;
+        font-size: 30px;
+        font-weight: 800;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    nb-card-body{
+        padding: 0px 71px;
+
+        .group-input{
+            margin-bottom: 15px;
+        } 
+        .group-title{
+            color: #666666;
+            font-size: 16px;
+            line-height: 30px
+        }
+
+        .required-field-title{
+            color: #333333;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 30px;
+        }
+
+        .asterisk-required{
+            color: red;
+        }
+        .col-sm-10{
+            margin-top: 10px;
+        }
+        .col-sm-2
+        {
+            margin-top: 10px;
+            padding: 0px;
+        }
+        
+        .new-link-groupname{
+            color: #666666;
+            font-size: 16px;
+            line-height: 30px;
+        }
+
+        input{
+            border: 1px solid #E1E1E1;
+            background-color: #FFFFFF;
+            height: 48px;
+        }
+
+        .icon-remove, .icon-add{
+            width: 40px;
+            height: 40px;
+            margin-top: 4px;
+        }
+    }
+    .supplier-name{
+        background-color: #E7EDF1;
+    }
+    .cancel {
+        background-color: #a5a5a5;
+        cursor: pointer;
+      }
+      
+      .create {
+        background-color: #8ac53f;
+        cursor: pointer;
+      }
+}

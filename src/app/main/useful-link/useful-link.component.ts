@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {UsefulLink} from './useful-link.model';
-import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
-
+import { UsefulLink } from './useful-link.model';
+import { UsefulLinkModalComponent } from './useful-link-modal/useful-link-modal.component';
+import { NbDialogService } from '@nebular/theme';
 
 @Component({
   selector: 'ngx-useful-link',
@@ -125,9 +125,14 @@ export class UsefulLinkComponent implements OnInit {
       PublishTo: 'Supplier1'
     }
   ];
-  constructor() { }
+  
+  
+  constructor(private dialogService: NbDialogService) { }
 
   ngOnInit() {
   }
-
+  onNewItemClick(){
+    this.dialogService
+      .open(UsefulLinkModalComponent,{closeOnBackdropClick: false});
+  }
 }
