@@ -1,11 +1,18 @@
+.redirect {
+  text-decoration: none;
+}
+
+.redirect:hover {
+  cursor: pointer;
+}
+
 .container {
   max-width: 1200px;
   margin-top: 26px;
 }
 
 nb-card {
-  height: 270px;
-  width: 270px;
+  width: 100%;
   border: 1px solid #e8e8ed;
   display: block;
   text-align: center;
@@ -25,32 +32,30 @@ nb-card {
   height: 25px;
   margin-top: 20px;
   margin-right: 20px;
+  display: block;
 }
 
-.title {
+.tile {
   font-family: 'Nunito Sans';
   font-size: 18px;
   font-weight: bold;
   line-height: 30px;
   text-align: center;
-  margin-top: 42px;
-  margin-bottom: 50px;
-
-  a {
-    color: #ffffff;
-  }
+  margin-top: 36px;
 }
 
 .icon {
-  height: 145px;
-  width: 120px;
-  margin-top: 20px;
-  margin-left: 10px;
+  width: 50%;
+  height: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  display: block;
 }
 
 .add-icon {
-  width: 120px;
-  height: 120px;
-  margin-top: 50px;
-  margin-left: 10px;
+  width: 50%;
+  height: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  display: block;
 }

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NbDialogRef } from '@nebular/theme';
-import { AppTitle } from '../app-title';
+import { AppTile } from '../app-tile';
 
 @Component({
   selector: 'ngx-create-or-edit-title',
@@ -30,7 +30,7 @@ export class CreateOrEditTitleComponent implements OnInit {
   ];
 
   selectedIconId = 0;
-  appTitle: AppTitle = new AppTitle();
+  appTile: AppTile = new AppTile();
 
   constructor(
     protected ref: NbDialogRef<CreateOrEditTitleComponent>
@@ -60,7 +60,7 @@ export class CreateOrEditTitleComponent implements OnInit {
   }
 
   create() {
-    this.appTitle.icon = this.icons[this.selectedIconId].src;
-    this.ref.close(this.appTitle);
+    this.appTile.icon = this.icons[this.selectedIconId].src;
+    this.ref.close(this.appTile);
   }
 }
