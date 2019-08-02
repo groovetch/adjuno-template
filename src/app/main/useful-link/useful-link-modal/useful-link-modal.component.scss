@@ -1,79 +1,69 @@
 
-nb-card{
+nb-card {
     width: 571px;
-    background-color: #FFFFFF;
-    font-family: "Nunito Sans";
-
+    background-color: #ffffff;
+    font-family: 'Nunito Sans';
     .close {
         width: 18px;
       }
-    nb-card-header{	
-        color: #242A32;
+    nb-card-header {
+        color: #242a32;
         font-size: 30px;
         font-weight: 800;
         line-height: 30px;
         text-align: center;
     }
-
-    nb-card-body{
-        padding: 0px 71px;
-
-        .group-input{
+    nb-card-body {
+        padding: 0 71px;
+        .group-input {
             margin-bottom: 15px;
-        } 
-        .group-title{
+        }
+        .group-title {
             color: #666666;
             font-size: 16px;
-            line-height: 30px
+            line-height: 30px;
         }
-
-        .required-field-title{
+        .required-field-title {
             color: #333333;
             font-size: 16px;
             font-weight: 600;
             line-height: 30px;
         }
-
-        .asterisk-required{
+        .asterisk-required {
             color: red;
         }
-        .col-sm-10{
+        .col-sm-10 {
             margin-top: 10px;
         }
-        .col-sm-2
-        {
+        .col-sm-2 {
             margin-top: 10px;
-            padding: 0px;
+            padding: 0;
         }
-        
-        .new-link-groupname{
+        .new-link-groupname {
             color: #666666;
             font-size: 16px;
             line-height: 30px;
         }
-
-        input{
-            border: 1px solid #E1E1E1;
-            background-color: #FFFFFF;
+        input {
+            border: 1px solid #e1e1e1;
+            background-color: #ffffff;
             height: 48px;
         }
-
-        .icon-remove, .icon-add{
+        .icon-remove, .icon-add {
             width: 40px;
             height: 40px;
             margin-top: 4px;
         }
     }
-    .supplier-name{
-        background-color: #E7EDF1;
+    .supplier-name {
+        background-color: #e7edf1;
     }
     .cancel {
         background-color: #a5a5a5;
         cursor: pointer;
       }
-      
-      .create {
+    .create {
         background-color: #8ac53f;
         cursor: pointer;
-      }
+    }
 }
