@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { DASHBOARD_ITEMS } from './dashboard-item';
 import { NbDialogService } from '@nebular/theme';
 import { CreateOrEditTitleComponent } from './create-or-edit-title/create-or-edit-title.component';
-import { AppTitle } from './app-title';
+import { AppTile } from './app-tile';
 
 @Component({
   selector: 'ngx-dashboard',
@@ -10,7 +10,7 @@ import { AppTitle } from './app-title';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
-  items: AppTitle[] = DASHBOARD_ITEMS;
+  items: AppTile[] = DASHBOARD_ITEMS;
   constructor(
     private dialogService: NbDialogService
   ) { }
@@ -22,5 +22,9 @@ export class DashboardComponent implements OnInit {
     this.dialogService
       .open(CreateOrEditTitleComponent, { closeOnBackdropClick: false })
       .onClose.subscribe(result => result && this.items.push(result));
+  }
+
+  redirect(link) {
+    alert(link);
   }
 }

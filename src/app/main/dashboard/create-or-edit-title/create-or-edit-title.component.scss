@@ -1,5 +1,6 @@
 nb-card {
   max-width: 571px;
+  height: 100%;
 
   nb-card-header {
     border: none;
@@ -15,18 +16,19 @@ nb-card {
     }
 
     p {
-      padding-top: 20px;
+      padding-top: 10px;
     }
   }
 
   nb-card-body {
-    margin: 0 64px;
+    margin: 0 10%;
     padding: 0;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
   }
 
   nb-card-footer {
-    margin: 0 64px 40px;
+    margin: 10px 10% 30px;
     padding: 0;
     border: none;
   }
@@ -43,7 +45,8 @@ label {
   color: #666666;
   font-family: 'Nunito Sans';
   font-size: 12px;
-  line-height: 30px;
+  line-height: 16px;
+  margin: 8px 0 0 0;
 }
 
 .custom-select {
@@ -52,10 +55,12 @@ label {
 
 .cancel {
   background-color: #a5a5a5;
+  margin-bottom: 10px;
 }
 
 .create {
   background-color: #8ac53f;
+  margin-bottom: 10px;
 }
 
 .custom-carousel {
