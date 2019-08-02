@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DashboardDocument } from './document.model';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { DocumentDialogComponent } from './document-dialog/document-dialog.component';
 
 @Component({
   selector: 'ngx-documents',
@@ -50,7 +52,7 @@ export class DocumentsComponent implements OnInit {
     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s`,
     DateAdded: new Date()
   }]
-  constructor() { }
+  constructor(private modalService: NgbModal) { }
 
   ngOnInit() {
   }
@@ -58,6 +60,15 @@ export class DocumentsComponent implements OnInit {
   // tslint:disable-next-line: use-life-cycle-interface
   ngAfterViewChecked() {
     $('.document-header').outerWidth($('.document-grid-contain').outerWidth());
+  }
+
+  onNewStoryBtnClick() {
+    const modalRef = this.modalService.open(DocumentDialogComponent, { windowClass: 'document-dialog'});
+    modalRef.componentInstance.eventType = 'Add';
+
+    modalRef.result.then((result) => {
+
+    })
   }
 
 }

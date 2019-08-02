@@ -4,6 +4,9 @@
   .news-header {
     display: inline;
     position: relative;
+    @media screen and(max-width: 575px) {
+      text-align: center;
+    }
   }
 
   .header-title {
@@ -12,10 +15,18 @@
     font-size: 32px;
     font-weight: bold;
     line-height: 30px;
+
+    @media screen and(max-width: 575px) {
+      float: unset;
+    }
   }
 
   .header-button {
     float: right;
+
+    @media screen and(max-width: 575px) {
+      float: unset;
+    }
   }
 
   a.button-add-new {
@@ -27,6 +38,12 @@
     display: inline-block;
     color: #fff;
     cursor: pointer;
+    margin-top: 10px;
+
+    @media screen and(max-width: 575px) {
+      text-align: justify;
+      margin-bottom: 10px;
+    }
   }
 
   .plus-button {

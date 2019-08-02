@@ -1,13 +1,22 @@
 .document-header {
-  display: flow-root;
+  display: inline-block;
   position: relative;
   padding-left: 15px;
   padding-right: 15px;
+  text-align: justify;
+
+  @media screen and(max-width: 575px) {
+    text-align: center;
+  }
 }
 
 .document-image {
   width: 350px;
   height: 182px;
+
+  @media screen and (max-width: 575px) {
+    width: 100%;
+  }
 }
 
 .document-card {
@@ -17,6 +26,7 @@
   padding: 10px;
   max-width: 370px;
   margin: 15px;
+  text-align: justify;
 }
 
 .document-flex {
@@ -26,7 +36,7 @@
 
 .banner {
   position: absolute;
-  top: -7px;
+  top: -17px;
 }
 
 .banner-text {
@@ -48,6 +58,11 @@
   margin: 20px;
 }
 
+.date {
+  text-transform: none;
+  font-style: normal;
+}
+
 .detail {
   color: #666666;
   font-size: 16px;
@@ -62,10 +77,18 @@
   font-size: 32px;
   font-weight: bold;
   line-height: 30px;
+
+  @media screen and(max-width: 575px) {
+    float: unset;
+  }
 }
 
 .header-button {
   float: right;
+
+  @media screen and(max-width: 575px) {
+    float: unset;
+  }
 }
 
 a.button-add-new {
@@ -77,6 +100,12 @@ a.button-add-new {
   display: inline-block;
   color: #fff;
   cursor: pointer;
+  margin-top: 10px;
+
+    @media screen and(max-width: 575px) {
+      text-align: justify;
+      margin-bottom: 10px;
+    }
 }
 
 .plus-button {
@@ -129,3 +158,8 @@ a.button-add-new {
 .document-grid-contain {
   display: inline;
 }
+
+.documents {
+  text-align: center;
+}
+

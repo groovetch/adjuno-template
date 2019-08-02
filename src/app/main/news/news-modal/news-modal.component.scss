@@ -59,6 +59,10 @@
     &.right {
       margin-left: 10px;
       margin-bottom: 20px;
+
+      @media screen and (max-width: 430px) {
+        margin-left: 0;
+      }
     }
 
     .delete-btn {

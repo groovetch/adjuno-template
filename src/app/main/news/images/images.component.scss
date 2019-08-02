@@ -27,6 +27,13 @@
   margin-left: 10px;
   margin-bottom: 10px;
   display: grid;
+  padding-right: 10px;
+
+  @media screen and (max-width: 575px) {
+    img {
+      width: 100%;
+    }
+  }
 }
 
 .top {
@@ -42,5 +49,5 @@
 }
 
 .image-group {
-  display: flex;
+  display: inline-block;
 }
