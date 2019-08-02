@@ -1,0 +1,66 @@
+<div class="contact-content ">
+  <div class="row">
+    <div class="col-1 col-sm-1 col-md-1 col-xl-2"></div>
+    <div class="col-10 col-sm-10 col-md-10 col-xl-8">
+        <!-- Content header and button -->
+        <div class="d-flex justify-content-between">
+          <h1 class="header-title">
+            Contacts
+          </h1>
+          <a class="add-contact-button">
+              <img class="add-icon" src="../../../assets/icons/contacts/add-new.svg">
+              <div class="btn-content">
+                Add New Contact
+              </div>
+          </a>
+        </div>
+        <!-- Grid contacts -->
+        <div class="d-flex justify-content-center">
+          <div class="contact-list">
+            <div class="row">
+              <div *ngFor="let contact of (contacts)" class="col-12 col-md-12 col-lg-6">
+                  <div class="contact-card-list">
+                    <nb-card>
+                      <div class="row">
+                        <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                            <img class="bg-contact" src="../../../assets/icons/contacts/bg-contact.svg">
+                            <img class="contact-user-icon" src="../../../assets/icons/contacts/contact-user-icon.svg">
+                        </div>
+
+                        <div class="col-7 col-sm-7 col-md-8 col-lg-7 col-xl-7">
+                            <div class="card-section">
+                                <div class="card-title">
+                                    <h1 class="contact-title">{{contact.FirstName}} {{contact.SurName}}</h1>
+                                    <div class="contact-description">{{contact.Company}} / {{contact.Department}}</div>
+                                </div>
+                                <div class="card-content">
+                                  <div class="row">
+                                    <div class="col-1 col-sm-1 col-lg-1">
+                                        <p><i class="fas fa-phone-alt contact-info"></i></p>
+                                        <p><i class="fas fa-envelope contact-info"></i></p>
+                                        <p><i class="fas fa-map-marker-alt contact-info"></i></p>
+                                    </div>
+                                    <div class="col-8 col-sm-8 col-lg-8">
+                                        <p>{{contact.PhoneNumber}}</p>
+                                        <p>{{contact.Email}}</p>
+                                        <p>{{contact.Country}}</p>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-2 col-sm-2 col-md-1 col-lg-2 col-xl-2">
+                            <div class="eclipse-dot"></div>
+                        </div>
+                      </div>
+                    </nb-card>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="col-1 col-sm-1 col-md-1 col-xl-2"></div>
+  </div>
+</div>

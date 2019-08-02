@@ -39,6 +39,7 @@ export class CardComponent implements OnInit {
   onEditBtnClick() {
     const modalRef = this.modalService.open(NewsModalComponent, { size: 'lg' });
     modalRef.componentInstance.news = this.news;
+    modalRef.componentInstance.eventType = 'Edit';
 
     modalRef.result.then((result) => {
       if(result) {

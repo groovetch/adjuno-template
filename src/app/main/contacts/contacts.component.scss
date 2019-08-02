@@ -1,0 +1,126 @@
+.contact-content {
+    .contact-box-wrapper {
+        width: 100%;
+    }
+
+    .add-contact-button {
+        background-color: #8dc63f;
+        border-radius: 5px;
+        color: #ffffff;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 15px;
+        height: 50px;
+        position: relative;
+        width: 230px;
+
+        .add-icon {
+            margin-top: 10px;
+            margin-left: 10px;
+            width: 30px;
+        }
+
+        // span {
+        //     margin-top: 4px;
+
+        //     .fa-circle {
+        //         background-color: #FFFFFF;
+        //         border-radius: 50%;
+        //         margin-top: 6px;
+        //         margin-left: 10px;
+        //         opacity: 0.3;
+        //     }
+
+        //     .fa-plus {
+        //         margin-top: 6px;
+        //         margin-left: 10px;
+        //         font-size: 16px;
+        //     }
+        // }
+
+        .btn-content {
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 15px;
+            margin-left: 10px;
+            position: absolute;
+            text-transform: uppercase;
+        }
+    }
+
+    .contact-list {
+        margin-top: 5px;
+
+        .contact-card-list {
+            .bg-contact {
+                width: 80%;
+                position: absolute;
+            }
+
+            .card-section {
+                margin-top: 35px;
+
+                .card-content {
+                    color: #333333;
+                    font-size: 16px;
+                    margin-top: 35px;
+
+                    .icons {
+                        text-align: center;
+                    }
+                }
+
+                .card-title {
+                    width: 120%;
+
+                    .contact-description {
+                        color: #666666;
+                        font-size: 16px;
+                        line-height: 0;
+                    }
+
+                    .contact-title {
+                        color: #333333;
+                        font-size: 24px;
+                        font-weight: bold;
+                        line-height: 22px;
+                    }
+                }
+
+                .contact-info {
+                    color: #aac1c9;
+                }
+            }
+
+            .contact-user-icon {
+                margin-top: 7%;
+                width: 100%;
+                position: absolute;
+            }
+
+            .eclipse-dot {
+                color: #555555;
+                margin-top: 15px;
+                margin-right: 10px;
+                text-align: right;
+              }
+              
+              .eclipse-dot::after {
+                content: '\2807';
+                font-size: 30px;
+              }
+
+            nb-card {
+                height: 220px;
+            }
+        }
+    }
+
+    .header-title {
+        color: #333333;
+        font-size: 32px;
+        font-weight: bold;
+        line-height: 30px;
+    }
+    
+}
