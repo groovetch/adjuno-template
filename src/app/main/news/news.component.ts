@@ -90,6 +90,7 @@ export class NewsComponent implements OnInit {
 
   onNewStoryBtnClick() {
     const modalRef = this.modalService.open(NewsModalComponent, { size: 'lg' });
+    modalRef.componentInstance.eventType = 'Add';
 
     modalRef.result.then((result) => {
       if(result) {

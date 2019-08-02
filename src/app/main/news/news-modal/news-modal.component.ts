@@ -3,7 +3,7 @@ import { News } from '../news.model';
 import * as ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 
-import { FormControl, FormGroup, Validators, MinLengthValidator } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'ngx-news-modal',
