@@ -70,6 +70,7 @@ import { DEFAULT_THEME } from './styles/theme.default';
 // import { COSMIC_THEME } from './styles/theme.cosmic';
 // import { CORPORATE_THEME } from './styles/theme.corporate';
 import { ADJUNO_THEME } from './styles/theme.adjuno';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 const BASE_MODULES = [CommonModule, FormsModule, ReactiveFormsModule];
 
@@ -160,7 +161,7 @@ const NB_THEME_PROVIDERS = [
 @NgModule({
   imports: [...BASE_MODULES, ...NB_MODULES],
   exports: [...BASE_MODULES, ...NB_MODULES, ...COMPONENTS, ...PIPES],
-  declarations: [...COMPONENTS, ...PIPES],
+  declarations: [...COMPONENTS, ...PIPES, NavbarComponent],
   entryComponents: [...ENTRY_COMPONENTS],
 })
 export class ThemeModule {

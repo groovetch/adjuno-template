@@ -1,24 +1,28 @@
 <div class="container">
   <div class="row">
-    <div class="col-md-3 d-flex justify-content-center" *ngFor="let item of items">
-      <nb-card class="item">
-        <nb-card-body>
-          <img class="dot-menu float-right" src="../../../assets/dashboard-icon/dot-menu.svg">
-          <img class="icon" src="../../../assets/dashboard-icon/{{item.icon}}">
-          <p class="title">
-            <a href="./{{item.link}}">{{item.title}}</a>
-          </p>
-        </nb-card-body>
-      </nb-card>
+    <div class="col-sm-12 col-md-6 col-lg-3" *ngFor="let item of items">
+      <a class="redirect" href="./{{item.link}}">
+        <nb-card class="item">
+          <nb-card-body>
+            <img class="dot-menu float-right" src="../../../assets/dashboard-icon/dot-menu.svg">
+            <img class="icon" src="../../../assets/dashboard-icon/{{item.icon}}">
+            <p class="tile">
+             {{item.tile}}
+            </p>
+          </nb-card-body>
+        </nb-card>
+      </a>
     </div>
-    <div class="col-md-3 d-flex justify-content-center">
-      <nb-card class="add-item" (click)="onCreateTitle()">
-        <nb-card-body>
-          <img class="dot-menu float-right" src="../../../assets/dashboard-icon/dot-menu-dark.svg">
-          <img class="add-icon" src="../../../assets/dashboard-icon/add.svg">
-          <p class="title">ADD A TITLE</p>
-        </nb-card-body>
-      </nb-card>
+    <div class="col-sm-12 col-md-6 col-lg-3">
+      <a class="redirect" (click)="onCreateTitle()">
+        <nb-card class="add-item">
+          <nb-card-body>
+            <img class="dot-menu float-right" src="../../../assets/dashboard-icon/dot-menu-dark.svg">
+            <img class="add-icon" src="../../../assets/dashboard-icon/add.svg">
+            <p class="tile">ADD A TILE</p>
+          </nb-card-body>
+        </nb-card>
+      </a>
     </div>
   </div>
 </div>

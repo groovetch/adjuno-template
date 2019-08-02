@@ -1,84 +1,89 @@
-<nb-card>
-  <nb-card-header>
-    <img class="close" src="assets/dashboard-icon/close.svg" (click)="cancel()">
-    <p>Create App Title</p>
-  </nb-card-header>
-  <nb-card-body>
-    <div class="row">
-      <div class="col-sm-12">
-        <div id="tile-image-carousel" class="carousel slide custom-carousel" data-ride="carousel" data-interval="false">
-          <div class="carousel-inner">
-            <div class="carousel-item" *ngFor="let icon of icons" [ngClass]="{'active': icon.id == 0}">
-              <img class="d-block icon" src="assets/dashboard-icon/{{icon.src}}" alt="First slide">
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#tile-image-carousel" role="button" data-slide="prev" (click)="prev()">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#tile-image-carousel" role="button" data-slide="next" (click)="next()">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
 
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="form-group">
-          <label>Site user name</label>
-          <select class="form-control custom-select">
-            <option value="0">sm103@gmail.com</option>
-          </select>
-          <span class="description">We automatically detect your user names for the Adjuno sites that you use.</span>
+  <nb-card>
+    <nb-card-header>
+      <img class="close" src="assets/dashboard-icon/close.svg" (click)="cancel()">
+      <p>Create App Tile</p>
+    </nb-card-header>
+    <nb-card-body>
+      <div class="row">
+        <div class="col-sm-12">
+          <div id="tile-image-carousel" class="carousel slide custom-carousel" data-ride="carousel"
+            data-interval="false">
+            <div class="carousel-inner">
+              <div class="carousel-item" *ngFor="let icon of icons" [ngClass]="{'active': icon.id == 0}">
+                <img class="d-block icon" src="assets/dashboard-icon/{{icon.src}}" alt="First slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#tile-image-carousel" role="button" data-slide="prev"
+              (click)="prev()">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#tile-image-carousel" role="button" data-slide="next"
+              (click)="next()">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-12">
-        <label>The tile wil lake me to...</label>
-      </div>
-      <div class="col-sm-4">
-        <div class="form-group">
-          <select class="form-control custom-select">
-            <option value="0">Dashboard</option>
-            <option value="1">Report</option>
-            <option value="2">Tool</option>
-          </select>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="form-group">
+            <label>Site user name</label>
+            <select class="form-control custom-select">
+              <option value="0">sm103@gmail.com</option>
+            </select>
+            <p class="description">We automatically detect your user names for the Adjuno sites that you use.</p>
+          </div>
         </div>
       </div>
-      <div class="col-sm-8">
-        <div class="form-group">
-          <select class="form-control custom-select">
-            <option value="0">Site homepage</option>
-          </select>
+      <div class="row">
+        <div class="col-sm-12">
+          <label>The tile will take me to...</label>
+        </div>
+        <div class="col-sm-4">
+          <div class="form-group">
+            <select class="form-control custom-select">
+              <option value="0">Dashboard</option>
+              <option value="1">Report</option>
+              <option value="2">Tool</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-sm-8">
+          <div class="form-group">
+            <select class="form-control custom-select">
+              <option value="0">Site homepage</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-sm-12">
+          <div class="form-group" style="margin-top: -1rem;">
+            <p class="description">Select the destination for your app tile</p>
+          </div>
         </div>
       </div>
-      <div class="col-sm-12">
-        <div class="form-group" style="margin-top: -1rem;">
-          <span class="description">Select the destination for your app title</span>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="form-group">
+            <label for="inputTileName">Tile name</label>
+            <input type="text" class="form-control" id="inputTileName" name="tileName" [(ngModel)]="appTile.tile">
+            <p class="description">Give your tile a descriptive name to make it easy to find on your dashboard.</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="form-group">
-          <label for="inputTitleName">Title name</label>
-          <input type="text" class="form-control" id="inputTitleName" name="titleName" [(ngModel)]="appTitle.title">
-          <span class="description">Give your tile a descriptive name to make it easy to find on your dashboard.</span>
+
+    </nb-card-body>
+    <nb-card-footer>
+      <div class="row">
+        <div class="col-6">
+          <button type="button" class="btn btn-block cancel" (click)="cancel()">Cancel</button>
+        </div>
+        <div class="col-6">
+          <button type="button" class="btn btn-block create" (click)="create()">Create</button>
         </div>
       </div>
-    </div>
-  </nb-card-body>
-  <nb-card-footer>
-    <div class="row">
-      <div class="col-sm-6">
-        <button type="button" class="btn btn-block cancel" (click)="cancel()">Cancel</button>
-      </div>
-      <div class="col-sm-6">
-        <button type="button" class="btn btn-block create" (click)="create()">Create</button>
-      </div>
-    </div>
-  </nb-card-footer>
-</nb-card>
+    </nb-card-footer>
+  </nb-card>
