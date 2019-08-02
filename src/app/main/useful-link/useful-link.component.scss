@@ -1,29 +1,26 @@
-.useful-link{
+.useful-link {
     font-family: 'Nunito Sans';
-
-    .useful-link-header{
+    .useful-link-header {
         display: inline;
-        position: relative
+        position: relative;
     }
-
-    .header-title{
+    .header-title {
         float: left;
         color: #333333;
         font-size: 32px;
         font-weight: bold;
         line-height: 30px;
     }
-
-    .header-button{
+    .header-button {
         float: right;
     }
 
-    a.button-add-new{
+    a.button-add-new {
         position: relative;
         height: 50px;
         width: 200px;
-        border:1px solid #E1E1E1;
-        background-color: #8DC63F;
+        border:1px solid #e1e1e1;
+        background-color: #8dc63f;
         border-radius: 5px;
         display: inline-block;
         cursor: pointer;
@@ -67,16 +64,16 @@
         }
       }
 
-      .btn-content{
+      .btn-content {
           position: absolute;
-          color: #FFFFFF;
+          color: #ffffff;
           font-size: 16px;
           line-height: 30px;
           margin-left: 50px;
           margin-top: -33px;
       }
 
-      .wrapper{
+      .wrapper {
           display: grid;
       }
 }
