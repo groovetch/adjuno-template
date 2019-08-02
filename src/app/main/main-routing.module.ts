@@ -27,8 +27,12 @@ const routes: Routes = [
         loadChildren: './news/news.module#NewsModule'
       },
       {
-        path: 'useful-link',
-        loadChildren: './useful-link/useful-link.module#UsefulLinkModule'
+        path: 'documents',
+        loadChildren: './documents/documents.module#DocumentsModule'
+      },
+      {
+        path: 'contacts',
+        loadChildren: './contacts/contacts.module#ContactsModule'
       },
       {
         path: '**',
