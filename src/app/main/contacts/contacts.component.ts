@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CONTACTS } from './contacts-model/contacts-mock';
+import { NbDialogService } from '@nebular/theme';
+import { CreateOrEditContactComponent } from './create-or-edit-contact/create-or-edit-contact.component';
 
 @Component({
   selector: 'ngx-contacts',
@@ -9,9 +11,15 @@ import { CONTACTS } from './contacts-model/contacts-mock';
 export class ContactsComponent implements OnInit {
   contacts = CONTACTS;
 
-  constructor() { }
+  constructor(
+    private dialogService: NbDialogService
+  ) { }
 
   ngOnInit() {
   }
 
+  onAddNewContactClicked() {
+    this.dialogService
+      .open(CreateOrEditContactComponent, { closeOnBackdropClick: false });
+  }
 }
