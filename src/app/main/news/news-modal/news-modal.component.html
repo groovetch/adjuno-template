@@ -26,7 +26,7 @@
               <div>
                 <!--image 1-->
                 <div class="image-section left" >
-                    <a class="delete-btn" (click)="removeImage('image1Url', fileInput1.files)" *ngIf="editedModel.Images && editedModel.Images[0]"><span aria-hidden="true">&times;</span></a>
+                    <a class="delete-btn" (click)="removeImage('image1Url')" *ngIf="editedModel.Images && editedModel.Images[0]"><span aria-hidden="true">&times;</span></a>
                     <a (click)="openImageSelector('imageInput1')">
                         <div class="image-frame">
                           <input id="imageInput1" #fileInput1 type="file" accept="image/*" (change)="preview(fileInput1.files, 'image1')">
@@ -38,7 +38,7 @@
 
                 <!--image 2-->
                 <div class="image-section right">
-                    <a class="delete-btn" (click)="removeImage('image2Url', fileInput2.files)" *ngIf="editedModel.Images && editedModel.Images[1]"><span aria-hidden="true">&times;</span></a>
+                    <a class="delete-btn" (click)="removeImage('image2Url')" *ngIf="editedModel.Images && editedModel.Images[1]"><span aria-hidden="true">&times;</span></a>
                     <a (click)="openImageSelector('imageInput2')">
                         <div class="image-frame">
                             <input id="imageInput2" #fileInput2 type="file" accept="image/*" (change)="preview(fileInput2.files, 'image2')">
@@ -52,7 +52,7 @@
               <div>
                 <!--image 3-->
                 <div class="image-section left">
-                    <a class="delete-btn" (click)="removeImage('image3Url', fileInput3.files)" *ngIf="editedModel.Images && editedModel.Images[2]"><span aria-hidden="true">&times;</span></a>
+                    <a class="delete-btn" (click)="removeImage('image3Url')" *ngIf="editedModel.Images && editedModel.Images[2]"><span aria-hidden="true">&times;</span></a>
                     <a (click)="openImageSelector('imageInput3')">
                         <div class="image-frame">
                             <input id="imageInput3" #fileInput3 type="file" accept="image/*" (change)="preview(fileInput3.files, 'image3')">
@@ -64,7 +64,7 @@
 
                 <!--image 4-->
                 <div class="image-section right">
-                    <a class="delete-btn" (click)="removeImage('image4Url', fileInput4.files)" *ngIf="editedModel.Images && editedModel.Images[3]"><span aria-hidden="true">&times;</span></a>
+                    <a class="delete-btn" (click)="removeImage('image4Url')" *ngIf="editedModel.Images && editedModel.Images[3]"><span aria-hidden="true">&times;</span></a>
                     <a (click)="openImageSelector('imageInput4')">
                         <div class="image-frame">
                             <input id="imageInput4" #fileInput4 type="file" accept="image/*" (change)="preview(fileInput4.files, 'image4')">

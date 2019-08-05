@@ -89,7 +89,7 @@ export class NewsComponent implements OnInit {
   ngOnInit() {}
 
   onNewStoryBtnClick() {
-    const modalRef = this.modalService.open(NewsModalComponent, { size: 'lg' });
+    const modalRef = this.modalService.open(NewsModalComponent, { size: 'lg', beforeDismiss: () => {return false;} });
     modalRef.componentInstance.eventType = 'Add';
 
     modalRef.result.then((result) => {

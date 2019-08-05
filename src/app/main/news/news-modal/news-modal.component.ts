@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ViewChild, ElementRef } from '@angular/core';
 import { News } from '../news.model';
 import * as ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
@@ -20,6 +20,10 @@ export class NewsModalComponent implements OnInit {
   public image3Url: any;
   public image4Url: any;
   public mockDataSupplier: Array<any>;
+  @ViewChild('fileInput1') myInputVariable1: ElementRef;
+  @ViewChild('fileInput2') myInputVariable2: ElementRef;
+  @ViewChild('fileInput3') myInputVariable3: ElementRef;
+  @ViewChild('fileInput4') myInputVariable4: ElementRef;
 
   //Form validation
   storyForm = new FormGroup({
@@ -83,20 +87,23 @@ export class NewsModalComponent implements OnInit {
     };
   }
 
-  removeImage(imageId, files) {
-    files = null;
+  removeImage(imageId) {
     switch (imageId) {
       case 'image1Url':
         this.editedModel.Images[0] = null;
+        this.myInputVariable1.nativeElement.value = '';
         break;
       case 'image2Url':
         this.editedModel.Images[1] = null;
+        this.myInputVariable2.nativeElement.value = '';
         break;
       case 'image3Url':
         this.editedModel.Images[2] = null;
+        this.myInputVariable3.nativeElement.value = '';
         break;
       case 'image4Url':
         this.editedModel.Images[3] = null;
+        this.myInputVariable4.nativeElement.value = '';
         break;
     }
   }

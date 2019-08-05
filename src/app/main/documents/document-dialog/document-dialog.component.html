@@ -19,10 +19,11 @@
       <label class="input-label required attachment-label">Attachments</label>
 
       <div class="image-section">
-        <a>
+        <a class="delete-btn" (click)="removeAttachment(fileInput.files)" *ngIf="editedDocument.Attachments"><span aria-hidden="true">&times;</span></a>
+        <a (click)="openImageSelector()">
           <div class="image-frame">
-            <input id="imageInput1" #fileInput1 type="file" accept="image/*" />
-
+            <input id="documentInput" #fileInput type="file" accept="image/*" (change)="preview(fileInput.files)"/>
+            <img *ngIf="editedDocument.Attachments" [src]="editedDocument.Attachments" id="attachmentImage"/>
             <div class="plus-button"></div>
           </div>
         </a>
@@ -37,16 +38,16 @@
     <div class="form-group">
       <div class="supplier-group">
         <div class="supplier-input header select-all">
-          <div class="col-sm-4 supplier-col label-col header">
+          <div class="supplier-col label-col header header-col">
             <label>Supplier</label>
           </div>
-          <div class="col-sm-4 supplier-col header">
+          <div class="supplier-col header header-col">
               <label class="checkbox-container required"> Publish to
                   <input type="checkbox" >
                   <span class="checkmark"></span>
               </label>
           </div>
-          <div class="col-sm-4 supplier-col header">
+          <div class="supplier-col header header-col">
               <label class="checkbox-container"> Ack Req'd
                   <input type="checkbox" >
                   <span class="checkmark"></span>
@@ -57,24 +58,31 @@
         <div class="list-supplier">
           <div class="viewport">
               <div *ngFor="let supplier of mockDataSupplier" class="supplier-input">
-                  <div class="col-sm-4 supplier-col label-col header">
+                  <div class="supplier-col label-col header">
                       <label>{{supplier.Name}}</label>
                     </div>
 
-                    <div class="col-sm-4 supplier-col header">
+                    <div class="supplier-col header">
                         <label class="checkbox-container">
                             <input type="checkbox" >
                             <span class="checkmark"></span>
                         </label>
                     </div>
 
-                    <div class="col-sm-4 supplier-col header">
+                    <div class="supplier-col header">
                         <label class="checkbox-container">
                             <input type="checkbox" >
                             <span class="checkmark"></span>
                         </label>
                     </div>
               </div>
+
+              <!--create 1 vitual row to avoid blur section-->
+              <div class="supplier-input"></div>
+          </div>
+
+          <div class="blur-section">
+
           </div>
 
         </div>

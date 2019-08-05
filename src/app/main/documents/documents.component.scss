@@ -5,7 +5,7 @@
   padding-right: 15px;
   text-align: justify;
 
-  @media screen and(max-width: 575px) {
+  @media screen and(max-width: 991px) {
     text-align: center;
   }
 }
@@ -78,16 +78,36 @@
   font-weight: bold;
   line-height: 30px;
 
-  @media screen and(max-width: 575px) {
+  @media screen and(max-width:  991px) {
     float: unset;
   }
+}
+
+.eclipse-dot {
+  color: #555555;
+  margin-top: 20px;
+  margin-right: 10px;
+  position: absolute;
+  right: -20px;
+  top:-10px;
+}
+
+.eclipse-dot::after {
+  content: '\2807';
+  font-size: 40px;
+  color: #ffffff;
 }
 
 .header-button {
   float: right;
 
-  @media screen and(max-width: 575px) {
+  @media screen and(max-width: 991px) {
     float: unset;
+
+    .button-add-new {
+      text-align: justify;
+      margin-bottom: 10px;
+    }
   }
 }
 
@@ -101,11 +121,6 @@ a.button-add-new {
   color: #fff;
   cursor: pointer;
   margin-top: 10px;
-
-    @media screen and(max-width: 575px) {
-      text-align: justify;
-      margin-bottom: 10px;
-    }
 }
 
 .plus-button {
