@@ -36,6 +36,13 @@
   }
 }
 
+.image-group.image4-group {
+  display: flex;
+  @media screen and (max-width: 575px) {
+    display: inline-block;
+  }
+}
+
 .top {
   margin-bottom: 2px;
 }
