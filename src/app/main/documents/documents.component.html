@@ -1,8 +1,8 @@
-<div class="container">
+<div class="container documents">
   <div class="document-header">
     <h1 class="header-title">Documents</h1>
     <div class="header-button">
-      <a class="button-add-new">
+      <a class="button-add-new" (click)="onNewStoryBtnClick()">
         <div class="plus-button"></div>
         <div class="btn-content">
           add new document
@@ -33,7 +33,7 @@
 
       <!--document detail-->
       <div class="detail">
-        Date Added: {{ document.DateAdded | date: 'MM/dd/yyyy' }}
+        Date Added: <span class="date">{{ document.DateAdded | date: 'MM/dd/yyyy' }}</span>
       </div>
     </nb-card>
   </div>

@@ -1,3 +1,95 @@
-<p>
-  document-dialog works!
-</p>
+<div class="news-modal">
+  <input type="text" style="display:none" />
+  <div class="news-modal-header">
+    <h4 class="news-modal-title">
+      {{ eventType == 'Add' ? 'Add New Document' : 'Edit Document' }}
+    </h4>
+    <button
+      type="button"
+      class="close btn-close-modal"
+      aria-label="Close"
+      (click)="close()"
+    >
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+  <div class="news-modal-body">
+    <div class="form-group">
+      <label class="input-label required attachment-label">Attachments</label>
+
+      <div class="image-section">
+        <a>
+          <div class="image-frame">
+            <input id="imageInput1" #fileInput1 type="file" accept="image/*" />
+
+            <div class="plus-button"></div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="description">Description</label>
+      <textarea class="text-area-description"></textarea>
+    </div>
+
+    <div class="form-group">
+      <div class="supplier-group">
+        <div class="supplier-input header select-all">
+          <div class="col-sm-4 supplier-col label-col header">
+            <label>Supplier</label>
+          </div>
+          <div class="col-sm-4 supplier-col header">
+              <label class="checkbox-container required"> Publish to
+                  <input type="checkbox" >
+                  <span class="checkmark"></span>
+              </label>
+          </div>
+          <div class="col-sm-4 supplier-col header">
+              <label class="checkbox-container"> Ack Req'd
+                  <input type="checkbox" >
+                  <span class="checkmark"></span>
+              </label>
+          </div>
+
+        </div>
+        <div class="list-supplier">
+          <div class="viewport">
+              <div *ngFor="let supplier of mockDataSupplier" class="supplier-input">
+                  <div class="col-sm-4 supplier-col label-col header">
+                      <label>{{supplier.Name}}</label>
+                    </div>
+
+                    <div class="col-sm-4 supplier-col header">
+                        <label class="checkbox-container">
+                            <input type="checkbox" >
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+
+                    <div class="col-sm-4 supplier-col header">
+                        <label class="checkbox-container">
+                            <input type="checkbox" >
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+              </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!--Modal button-->
+
+    <div class="news-modal-footer">
+      <div class="col-md-6 btn-section left">
+        <a class="cancel-button" (click)="close()">Cancel</a>
+      </div>
+      <div class="col-md-6 btn-section right">
+        <a class="save-button" (click)="save()">Save</a>
+      </div>
+    </div>
+  </div>
+</div>
