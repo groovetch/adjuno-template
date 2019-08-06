@@ -24,7 +24,7 @@
           <div class="image-frame">
             <input id="documentInput" #fileInput type="file" accept="image/*" (change)="preview(fileInput.files)"/>
             <img *ngIf="editedDocument.Attachments" [src]="editedDocument.Attachments" id="attachmentImage"/>
-            <div class="plus-button"></div>
+            <div *ngIf="!editedDocument.Attachments" class="plus-button"></div>
           </div>
         </a>
       </div>
