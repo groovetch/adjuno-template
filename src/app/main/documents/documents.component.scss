@@ -93,7 +93,7 @@
   margin-right: 10px;
   position: absolute;
   right: -20px;
-  top:-10px;
+  top: -10px;
 }
 
 .eclipse-dot::after {
@@ -125,6 +125,10 @@ a.button-add-new {
   color: #fff;
   cursor: pointer;
   margin-top: 10px;
+
+  &:hover {
+    color: #fff;
+  }
 }
 
 .plus-button {
@@ -181,4 +185,3 @@ a.button-add-new {
 .documents {
   text-align: center;
 }
-

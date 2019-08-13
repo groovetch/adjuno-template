@@ -34,6 +34,10 @@
     align-items: center;
     width: auto;
 
+    &:hover {
+      cursor: pointer;
+    }
+
     .navigation {
       @include nb-ltr(padding-right, nb-theme(padding));
       @include nb-rtl(padding-left, nb-theme(padding));
@@ -43,7 +47,6 @@
       i {
         display: block;
       }
-
     }
 
     .logo {
@@ -164,7 +167,6 @@
   }
 
   @include media-breakpoint-down(md) {
-
     nb-action:not(.toggle-settings) {
       border: none;
     }
@@ -187,14 +189,12 @@
   }
 
   @include media-breakpoint-down(sm) {
-
     nb-user /deep/ .user-name {
       display: none;
     }
   }
 
   @include media-breakpoint-down(is) {
-
     .header-container {
       .logo {
         font-size: 1.25rem;
@@ -220,7 +220,6 @@
     }
   }
 }
-
 
 .navbar-item {
   border-left: 1px solid #e8e8ed;
@@ -317,6 +316,10 @@
     width: 350px;
     overflow-x: hidden;
     overflow-y: auto;
+  }
+
+  .dropdown-item {
+    cursor: pointer;
   }
 
   .dropdown-item:hover {
