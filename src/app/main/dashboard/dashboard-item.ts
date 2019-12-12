@@ -1,23 +1,23 @@
 export const DASHBOARD_ITEMS = [
     {
-        tile: 'NEWS',
+        tile: 'News',
         icon: 'news.svg',
         link: '#/main/news'
     }, {
-        tile: 'CONTACTS',
+        tile: 'Contacts',
         icon: 'contacts.svg',
         link: '#/main/contacts'
     }, {
-        tile: 'USEFUL LINKS',
-        icon: 'user-link.svg',
+        tile: 'Useful links',
+        icon: 'useful-links.svg',
         link: '#/main/usefulllink'
     }, {
-        tile: 'DOCUMENTS',
-        icon: 'document.svg',
+        tile: 'Documents',
+        icon: 'documents.svg',
         link: '#/main/documents'
     }, {
-        tile: 'CREATE SAMPLE',
-        icon: 'sample.svg',
+        tile: 'Create sample',
+        icon: 'create-sample.svg',
         link: '#/main/sample'
     },
 ];

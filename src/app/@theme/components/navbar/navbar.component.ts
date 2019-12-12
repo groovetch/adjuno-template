@@ -14,7 +14,7 @@ export class NavbarComponent implements OnInit {
   @Input() position = 'normal';
 
   user = {
-    username: 'Khang Tran',
+    username: 'wayne.morgan@adjuno.com',
     avatar: 'assets/user-icon/avatar.svg',
   };
 

@@ -144,10 +144,20 @@
     }
   }
 
+  .main-content {
+    background-color: #ffffff;
+  }
+
+  .adj-footer{
+    /deep/ .fixed{
+      background-color: #1a1a1b;
+      color: rgba(255, 255, 255, 0.5);
+    }
+  }
+
   @include media-breakpoint-down(xs) {
     .main-content {
       padding: 0.75rem !important;
-
     }
   }
 
@@ -171,5 +181,9 @@
     .main-btn {
       display: none;
     }
+  }
+
+  .adj-nav{
+    border-top: 6px solid #f47920;
   }
 }
