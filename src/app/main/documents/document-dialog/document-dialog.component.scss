@@ -1,7 +1,7 @@
 @import '../../../@theme/styles/themes';
 
 .news-modal {
-  font-family: 'Nunito Sans';
+  font-family: 'Helvetica';
   position: relative;
 
   .news-modal-header {
@@ -23,7 +23,7 @@
 
   .news-modal-title {
     color: #242a32;
-    font-family: 'Nunito Sans';
+    font-family: 'Helvetica';
     font-size: 30px;
     font-weight: 800;
     line-height: 30px;
@@ -81,7 +81,7 @@
     text-align: center;
     background-color: #a5a5a5;
     color: #ffffff;
-    font-family: 'Nunito Sans';
+    font-family: 'Helvetica';
     font-size: 18px;
     font-weight: 600;
     line-height: 50px;
@@ -108,7 +108,7 @@
     text-align: center;
     background-color: nb-theme(adjColor03);
     color: #ffffff;
-    font-family: 'Nunito Sans';
+    font-family: 'Helvetica';
     font-size: 18px;
     font-weight: 600;
     line-height: 50px;
@@ -217,7 +217,7 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    font-family: 'Nunito Sans';
+    font-family: 'Helvetica';
     font-size: 16px;
     line-height: 25px;
     padding-left: 45px;
