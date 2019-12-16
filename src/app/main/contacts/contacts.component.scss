@@ -1,10 +1,12 @@
+@import '../../@theme/styles/themes';
+
 .contact-content {
     .contact-box-wrapper {
         width: 100%;
     }
 
     .add-contact-button {
-        background-color: #8dc63f;
+        background-color: nb-theme(adjColor03);
         border-radius: 5px;
         color: #ffffff;
         cursor: pointer;
@@ -104,7 +106,7 @@
                 margin-right: 10px;
                 text-align: right;
               }
-              
+
               .eclipse-dot::after {
                 content: '\2807';
                 font-size: 30px;
@@ -122,5 +124,5 @@
         font-weight: bold;
         line-height: 30px;
     }
-    
+
 }

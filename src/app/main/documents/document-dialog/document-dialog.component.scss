@@ -1,3 +1,5 @@
+@import '../../../@theme/styles/themes';
+
 .news-modal {
   font-family: 'Nunito Sans';
   position: relative;
@@ -104,7 +106,7 @@
     max-width: 320px;
     display: inline-block;
     text-align: center;
-    background-color: #8ac53f;
+    background-color: nb-theme(adjColor03);
     color: #ffffff;
     font-family: 'Nunito Sans';
     font-size: 18px;
@@ -249,7 +251,7 @@
 
   /* When the checkbox is checked, add a green background */
   .checkbox-container input:checked ~ .checkmark {
-    background-color: #8ac53f;
+    background-color: nb-theme(adjColor03);
   }
 
   /* Create the checkmark/indicator (hidden when not checked) */

@@ -1,3 +1,5 @@
+@import '../../@theme/styles/themes';
+
 .document-header {
   display: inline-block;
   position: relative;
@@ -119,7 +121,7 @@ a.button-add-new {
   position: relative;
   height: 50px;
   width: 240px;
-  background-color: #8dc63f;
+  background-color: nb-theme(adjColor03);
   border-radius: 5px;
   display: inline-block;
   color: #fff;

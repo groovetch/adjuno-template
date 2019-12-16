@@ -1,3 +1,5 @@
+@import '../../../@theme/styles/themes';
+
 nb-card {
     border-radius: 12px;
     height: 808px;
@@ -38,7 +40,7 @@ nb-card {
             position: absolute;
             width: 85%;
         }
-        
+
     }
 
     .create-or-edit-contact-body {
@@ -76,7 +78,7 @@ nb-card {
             }
 
             .supplier-group {
-                
+
                 .list-supplier {
 
                     .viewport {
@@ -136,10 +138,10 @@ nb-card {
                     .container:hover input ~ .checkmark {
                       background-color: #ccc;
                     }
-                
+
                     /* When the checkbox is checked, add a green background */
                     .container input:checked ~ .checkmark {
-                      background-color: #8ac53f;
+                      background-color: nb-theme(adjColor03);
                     }
 
                     /* Create the checkmark/indicator (hidden when not checked) */
@@ -214,7 +216,7 @@ nb-card {
             max-width: 320px;
             display: inline-block;
             text-align: center;
-            background-color: #8ac53f;
+            background-color: nb-theme(adjColor03);
             color: #ffffff;
             font-family: 'Nunito Sans';
             font-size: 18px;
@@ -223,7 +225,7 @@ nb-card {
             right: 0;
             cursor: pointer;
             border-radius: 2.5px;
-        
+
             @media screen and (max-width: 767px) {
                 right: unset;
             }

@@ -1,3 +1,5 @@
+@import '../../@theme/styles/themes';
+
 .news {
   font-family: 'Nunito Sans';
 
@@ -33,7 +35,7 @@
     position: relative;
     height: 50px;
     width: 200px;
-    background-color: #8dc63f;
+    background-color: nb-theme(adjColor03);
     border-radius: 5px;
     display: inline-block;
     color: #fff;

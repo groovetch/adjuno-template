@@ -1,3 +1,5 @@
+@import '../../../@theme/styles/themes';
+
 nb-card {
   max-width: 571px;
   height: 100%;
@@ -59,12 +61,12 @@ label {
 }
 
 .create {
-  background-color: #8ac53f;
+  background-color: nb-theme(adjColor03);
   margin-bottom: 10px;
 }
 
 .custom-carousel {
-  background-color: #8ac53f;
+  background-color: nb-theme(adjColor03);
   margin-bottom: 1rem;
 
   .icon {

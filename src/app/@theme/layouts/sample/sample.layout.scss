@@ -150,7 +150,7 @@
 
   .adj-footer {
     /deep/ .fixed {
-      background-color: #1a1a1b;
+      background-color: nb-theme(adj-footer-basic-background);
       color: rgba(255, 255, 255, 0.5);
     }
   }
