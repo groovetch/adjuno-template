@@ -193,8 +193,8 @@
 
   .adj-nav {
     border-top: 6px solid #f47920;
-    -webkit-box-shadow: 0 0 40px 0 rgba(164,164,164,.7);
-    box-shadow: 0 0 40px 0 rgba(164,164,164,.7);
+    -webkit-box-shadow: 0 0 40px 0 rgba(164, 164, 164, 0.7);
+    box-shadow: 0 0 40px 0 rgba(164, 164, 164, 0.7);
 
     /deep/ .fixed {
       box-shadow: unset;
