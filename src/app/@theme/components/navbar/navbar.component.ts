@@ -1,8 +1,9 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { NbSidebarService, NbMenuService } from '@nebular/theme';
+import { NbSidebarService, NbMenuService, NbDialogService } from '@nebular/theme';
 import { UserData } from '../../../@core/data/users';
 import { AnalyticsService, LayoutService } from '../../../@core/utils';
 import { NOTIFICATIONS } from './notifycation-item';
+import { PreferenceComponent } from './preference/preference.component';
 
 @Component({
   selector: 'ngx-navbar',
@@ -23,7 +24,8 @@ export class NavbarComponent implements OnInit {
   constructor(private sidebarService: NbSidebarService,
     private menuService: NbMenuService,
     private analyticsService: AnalyticsService,
-    private layoutService: LayoutService) {
+    private layoutService: LayoutService,
+    private dialogService: NbDialogService) {
   }
 
   ngOnInit() {
@@ -42,6 +44,11 @@ export class NavbarComponent implements OnInit {
 
   startSearch() {
     this.analyticsService.trackEvent('startSearch');
+  }
+
+  openPreference() {
+    this.dialogService
+      .open(PreferenceComponent, { closeOnBackdropClick: false });
   }
 
 }

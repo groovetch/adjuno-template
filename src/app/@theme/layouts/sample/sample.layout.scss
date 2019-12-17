@@ -152,6 +152,14 @@
     /deep/ .fixed {
       background-color: nb-theme(adj-footer-basic-background);
       color: rgba(255, 255, 255, 0.5);
+      padding: 1rem;
+    }
+  }
+
+  .window-mode {
+    padding-top: unset;
+    /deep/ .scrollable-container {
+      max-width: unset;
     }
   }
 
@@ -185,5 +193,13 @@
 
   .adj-nav {
     border-top: 6px solid #f47920;
+    -webkit-box-shadow: 0 0 40px 0 rgba(164,164,164,.7);
+    box-shadow: 0 0 40px 0 rgba(164,164,164,.7);
+
+    /deep/ .fixed {
+      box-shadow: unset;
+      -webkit-box-shadow: unset;
+      max-width: unset;
+    }
   }
 }

@@ -1,4 +1,4 @@
-<nb-layout [center]="layout.id === 'center-column'" windowMode>
+<nb-layout [center]="layout.id === 'center-column'" >
     <nb-layout-header fixed class="adj-nav">
         <ngx-navbar [position]="sidebar.id === 'start' ? 'normal': 'inverse'"></ngx-navbar>
     </nb-layout-header>
@@ -16,6 +16,6 @@
     </nb-layout-column>
 
     <nb-layout-footer fixed class="adj-footer">
-        <ngx-footer></ngx-footer>
+        <ngx-footer class="footer-container"></ngx-footer>
     </nb-layout-footer>
 </nb-layout>

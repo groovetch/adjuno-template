@@ -71,6 +71,7 @@ import { DEFAULT_THEME } from './styles/theme.default';
 // import { CORPORATE_THEME } from './styles/theme.corporate';
 import { ADJUNO_THEME } from './styles/theme.adjuno';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { PreferenceComponent } from './components/navbar/preference/preference.component';
 
 const BASE_MODULES = [CommonModule, FormsModule, ReactiveFormsModule];
 
@@ -161,7 +162,7 @@ const NB_THEME_PROVIDERS = [
 @NgModule({
   imports: [...BASE_MODULES, ...NB_MODULES],
   exports: [...BASE_MODULES, ...NB_MODULES, ...COMPONENTS, ...PIPES],
-  declarations: [...COMPONENTS, ...PIPES, NavbarComponent],
+  declarations: [...COMPONENTS, ...PIPES, NavbarComponent, PreferenceComponent],
   entryComponents: [...ENTRY_COMPONENTS],
 })
 export class ThemeModule {
