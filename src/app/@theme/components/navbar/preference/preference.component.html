@@ -2,9 +2,21 @@
   <nb-card>
     <nb-card-header>
       <img class="close" src="assets/dashboard-icon/close.svg" (click)="cancel()">
-      <p>Create App Tile</p>
+      <p>Preferences</p>
     </nb-card-header>
     <nb-card-body>
+        <div class="row">
+            <div class="col-sm-12">
+              <div class="form-group">
+                <label>Tile Size</label>
+                <nb-select placeholder="Tile Size" [(ngModel)]="selectedTileSize">
+                    <nb-option value="small">Small</nb-option>
+                    <nb-option value="medium">Medium</nb-option>
+                    <nb-option value="large">Large</nb-option>
+                  </nb-select>
+              </div>
+            </div>
+          </div>
 
     </nb-card-body>
     <nb-card-footer>
@@ -13,7 +25,7 @@
           <button type="button" class="btn btn-block cancel" (click)="cancel()">Cancel</button>
         </div>
         <div class="col-6">
-          <button type="button" class="btn btn-block create" (click)="apply()">Create</button>
+          <button type="button" class="btn btn-block apply" (click)="apply()">Apply</button>
         </div>
       </div>
     </nb-card-footer>

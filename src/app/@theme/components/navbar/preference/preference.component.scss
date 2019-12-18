@@ -1,0 +1,79 @@
+@import '../../../styles/themes';
+
+nb-card {
+  width: 571px;
+  height: 100%;
+
+  @media screen and (max-width: 571px){
+    width: 100%;
+  }
+
+  nb-card-header {
+    border: none;
+    color: #242a32;
+    font-family: 'Helvetica';
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 30px;
+    text-align: center;
+
+    .close {
+      width: 18px;
+    }
+
+    p {
+      padding-top: 10px;
+    }
+  }
+
+  nb-card-body {
+    margin: 0 10%;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  nb-card-footer {
+    margin: 10px 10% 30px;
+    padding: 0;
+    border: none;
+  }
+}
+
+label {
+  color: #666666;
+  font-family: 'Helvetica';
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.description {
+  color: #666666;
+  font-family: 'Helvetica';
+  font-size: 12px;
+  line-height: 16px;
+  margin: 8px 0 0;
+}
+
+.cancel {
+  background-color: #a5a5a5;
+  margin-bottom: 10px;
+}
+
+.apply {
+  background-color: nb-theme(adjColor03);
+  margin-bottom: 10px;
+}
+
+.custom-carousel {
+  background-color: nb-theme(adjColor03);
+  margin-bottom: 1rem;
+
+  .icon {
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}

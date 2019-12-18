@@ -3,6 +3,7 @@ import { DASHBOARD_ITEMS } from './dashboard-item';
 import { NbDialogService } from '@nebular/theme';
 import { CreateOrEditTitleComponent } from './create-or-edit-title/create-or-edit-title.component';
 import { AppTile } from './app-tile';
+import { PreferenceObserver } from '../../@theme/components/navbar/preference';
 
 @Component({
   selector: 'ngx-dashboard',
@@ -11,11 +12,18 @@ import { AppTile } from './app-tile';
 })
 export class DashboardComponent implements OnInit {
   items: AppTile[] = DASHBOARD_ITEMS;
+  tileSize: string;
   constructor(
-    private dialogService: NbDialogService
-  ) { }
+    private dialogService: NbDialogService,
+    private preferenceObser: PreferenceObserver
+  ) {
+    this.preferenceObser.dataChange.subscribe((data) => {
+      this.tileSize = data;
+    });
+  }
 
   ngOnInit() {
+    this.tileSize = 'large';
   }
 
   onCreateTitle() {

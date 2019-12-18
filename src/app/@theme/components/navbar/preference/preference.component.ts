@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NbDialogRef } from '@nebular/theme';
+import { FormControl } from '@angular/forms';
+import { PreferenceObserver } from '../preference';
 
 @Component({
   selector: 'ngx-preference',
@@ -8,8 +10,10 @@ import { NbDialogRef } from '@nebular/theme';
 })
 export class PreferenceComponent implements OnInit {
 
+  selectedTileSize: string;
   constructor(
-    protected ref: NbDialogRef<PreferenceComponent>
+    protected ref: NbDialogRef<PreferenceComponent>,
+    private preferenceObser: PreferenceObserver
   ) { }
 
   ngOnInit() {
@@ -20,5 +24,7 @@ export class PreferenceComponent implements OnInit {
   }
 
   apply() {
+    this.preferenceObser.setData(this.selectedTileSize);
+    this.ref.close();
   }
 }

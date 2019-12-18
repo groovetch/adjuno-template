@@ -129,7 +129,7 @@ const COMPONENTS = [
 ];
 
 const ENTRY_COMPONENTS = [
-  ThemeSwitcherListComponent,
+  ThemeSwitcherListComponent
 ];
 
 const PIPES = [
@@ -163,7 +163,7 @@ const NB_THEME_PROVIDERS = [
   imports: [...BASE_MODULES, ...NB_MODULES],
   exports: [...BASE_MODULES, ...NB_MODULES, ...COMPONENTS, ...PIPES],
   declarations: [...COMPONENTS, ...PIPES, NavbarComponent, PreferenceComponent],
-  entryComponents: [...ENTRY_COMPONENTS],
+  entryComponents: [...ENTRY_COMPONENTS, PreferenceComponent],
 })
 export class ThemeModule {
   static forRoot(): ModuleWithProviders {

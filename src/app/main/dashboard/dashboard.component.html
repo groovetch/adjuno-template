@@ -1,6 +1,7 @@
 <div class="container">
-  <div class="row">
-    <div class="col-sm-12 col-md-6 col-lg-3" *ngFor="let item of items">
+  <div class="row div-row">
+
+    <div [ngClass]="{'card-small': tileSize=='small', 'card-medium': tileSize=='medium', 'card-large': tileSize=='large'}" *ngFor="let item of items">
       <a class="redirect" href="./{{item.link}}">
         <nb-card class="item">
           <nb-card-body>
@@ -13,7 +14,8 @@
         </nb-card>
       </a>
     </div>
-    <div class="col-sm-12 col-md-6 col-lg-3">
+
+    <div [ngClass]="{'card-small': tileSize=='small', 'card-medium': tileSize=='medium', 'card-large': tileSize=='large'}">
       <a class="redirect" (click)="onCreateTitle()">
         <nb-card class="add-item">
           <nb-card-body>

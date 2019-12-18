@@ -67,3 +67,36 @@ nb-card {
 .add-tile {
   margin-top: 10px;
 }
+
+.div-row {
+  display: flex;
+  justify-content: left;
+}
+
+@media (max-width: 533px) {
+  .div-row {
+    justify-content: center;
+  }
+}
+
+.card-small {
+  width: 135px;
+  margin-left: 15px;
+  margin-right: 15px;
+
+  .add-tile {
+    margin-top: 20px;
+  }
+}
+
+.card-medium {
+  width: 180px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.card-large {
+  width: 270px;
+  margin-left: 15px;
+  margin-right: 15px;
+}

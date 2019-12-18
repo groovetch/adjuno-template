@@ -10,15 +10,16 @@ import {
 } from '@nebular/theme';
 import { CreateOrEditTitleComponent } from './create-or-edit-title/create-or-edit-title.component';
 import { FormsModule } from '@angular/forms';
+import { PreferenceObserver } from '../../@theme/components/navbar/preference';
 
 
 const COMPONENT = [
   DashboardComponent,
-  CreateOrEditTitleComponent,
+  CreateOrEditTitleComponent
 ];
 
 const ENTRY_COMPONENTS = [
-  CreateOrEditTitleComponent,
+  CreateOrEditTitleComponent
 ];
 
 const MODULES = [
@@ -36,7 +37,8 @@ const MODULES = [
     ...COMPONENT,
   ],
   imports: [
-    ...MODULES,
+    ...MODULES
+
   ],
   entryComponents: [
     ...ENTRY_COMPONENTS,
