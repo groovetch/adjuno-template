@@ -3,7 +3,7 @@ import { DASHBOARD_ITEMS } from './dashboard-item';
 import { NbDialogService } from '@nebular/theme';
 import { CreateOrEditTitleComponent } from './create-or-edit-title/create-or-edit-title.component';
 import { AppTile } from './app-tile';
-import { PreferenceObserver } from '../../@theme/components/navbar/preference';
+import { PreferenceObserver } from '../../@theme/components/navbar/preferenceObserver';
 
 @Component({
   selector: 'ngx-dashboard',

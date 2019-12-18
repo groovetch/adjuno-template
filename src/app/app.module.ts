@@ -15,9 +15,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { ThemeModule } from './@theme/theme.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ReactiveFormsModule } from '@angular/forms';
+import { PreferenceComponent } from './@theme/components/navbar/preference/preference.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, PreferenceComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -29,6 +30,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     ThemeModule.forRoot(),
     CoreModule.forRoot()
   ],
+  entryComponents: [PreferenceComponent],
   bootstrap: [AppComponent],
   providers: [{ provide: APP_BASE_HREF, useValue: '/' }]
 })

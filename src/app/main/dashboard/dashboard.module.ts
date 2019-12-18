@@ -10,7 +10,7 @@ import {
 } from '@nebular/theme';
 import { CreateOrEditTitleComponent } from './create-or-edit-title/create-or-edit-title.component';
 import { FormsModule } from '@angular/forms';
-import { PreferenceObserver } from '../../@theme/components/navbar/preference';
+import { PreferenceComponent } from '../../@theme/components/navbar/preference/preference.component';
 
 
 const COMPONENT = [
@@ -34,7 +34,7 @@ const MODULES = [
 
 @NgModule({
   declarations: [
-    ...COMPONENT,
+    ...COMPONENT
   ],
   imports: [
     ...MODULES

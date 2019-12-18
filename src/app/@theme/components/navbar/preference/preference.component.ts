@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NbDialogRef } from '@nebular/theme';
 import { FormControl } from '@angular/forms';
-import { PreferenceObserver } from '../preference';
+import { PreferenceObserver } from '../preferenceObserver';
 
 @Component({
   selector: 'ngx-preference',
