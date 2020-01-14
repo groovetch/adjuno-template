@@ -1,13 +1,12 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { NbSidebarService, NbMenuService, NbDialogService } from '@nebular/theme';
-import { UserData } from '../../../@core/data/users';
+import { NbSidebarService, NbMenuService } from '@nebular/theme';
 import { AnalyticsService, LayoutService } from '../../../@core/utils';
 import { NOTIFICATIONS } from './notifycation-item';
 
 @Component({
   selector: 'ngx-navbar',
   templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.scss']
+  styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent implements OnInit {
 
@@ -23,8 +22,7 @@ export class NavbarComponent implements OnInit {
   constructor(private sidebarService: NbSidebarService,
     private menuService: NbMenuService,
     private analyticsService: AnalyticsService,
-    private layoutService: LayoutService,
-    private dialogService: NbDialogService) {
+    private layoutService: LayoutService) {
   }
 
   ngOnInit() {

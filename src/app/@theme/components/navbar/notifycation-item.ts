@@ -22,7 +22,8 @@ export const NOTIFICATIONS = [
         title: 'A new item has been create 1',
         date: '3 days ago',
         isDanger: true,
-    }, {
+    },
+    {
         image: 'assets/images/camera1.jpg',
         title: 'A new item has been create 1',
         date: '3 days ago',
@@ -32,5 +33,5 @@ export const NOTIFICATIONS = [
         title: 'A new item has been create 1',
         date: '3 days ago',
         isDanger: true,
-    }
-];
+    },
+  ];
