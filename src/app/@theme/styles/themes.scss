@@ -3,12 +3,17 @@
 // @nebular out of the box themes
 @import '~@nebular/theme/styles/themes';
 
+$nb-enable-css-custom-properties: true; // <-- enable css custom properties
+
 // which themes you what to enable (empty to enable all)
 // $nb-enabled-themes: (default, cosmic, corporate, adjuno);
 $nb-enabled-themes: (default, adjuno);
 
 $nb-themes: nb-register-theme((
  // app wise variables for each theme
+  background-basic-color: #1a1a1b,
+  background-basic-color-1: #1a1a1b,
+  color-basic-300: #1a1a1b,
   sidebar-header-gap: 2rem,
   sidebar-header-height: initial,
   layout-content-width: 1400px,
@@ -41,23 +46,28 @@ $nb-themes: nb-register-theme((
   // Colors variables
   adjColor01: #ffffff,
   adjColor02: #000000,
-  adjColor03: #8dc63f,
+  adjColor03: #f17922,
   adjColor04: #012842,
-  adjColor05: #80b636,
+  adjColor05: #f17922,
   adjColor06: #76848e,
   adjColor07: #4c6676,
   adjColor08: #00416d,
   adjColor09: #dee4e8,
   adjColor10: #ef7104,
   adjColor11: #e80000,
+  adjColor12: #1a1a1b,
+
+  // theme variable for form inputs
+  select-option-selected-background-color: red,
+  select-outline-basic-background-color: red,
 
  // app wise variables for each theme
   color-fg-highlight: adjColor03,
   color-primary: adjColor03,
-  color-success: adjColor03,
   color-info: adjColor06,
   color-warning: adjColor10,
   color-danger: adjColor10,
+  adj-footer-basic-background: adjColor12,
 
   link-color: adjColor03,
   link-color-hover: adjColor04,
