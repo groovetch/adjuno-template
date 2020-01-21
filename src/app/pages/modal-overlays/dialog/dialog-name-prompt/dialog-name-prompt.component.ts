@@ -8,6 +8,7 @@ import { NbDialogRef } from '@nebular/theme';
 })
 export class DialogNamePromptComponent {
 
+  public picked: any = '1';
   constructor(protected ref: NbDialogRef<DialogNamePromptComponent>) {}
 
   cancel() {
